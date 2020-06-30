@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--?xml-model href="http://www.tei-c.orgtei_all.dtd" schematypens="http://relaxng.org/ns/structure/1.0"?-->
+
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Vincenzo Bellini a Vincenzo Ferlito, in Venezia, 13 dicembre 1832 </title>
+                <!--formato titolo: mittente a destinatario, in luogo, data di scrittura della lettera -->
+                <author ref="TEI-ListPerson.xml#VB">Vincenzo Bellini</author>
+                <respStmt>
+					<resp>transcription by</resp>
+					<name ref="#GS">Graziella Seminara</name>
+				</respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Digital Edition
+					<date when="2020-06">June 2020</date>
+				</edition>
+                <respStmt>
+					<resp>encoding by</resp>
+					<name ref="#ADS">Anthea Di Salvatore</name>
+					<name ref="#GM">Giorgia Migliozzi</name>
+				</respStmt>
+            </editionStmt>
+            <publicationStmt>
+				<publisher ref="https://infouma.fileli.unipi.it/">Università di Pisa - Corso di Laurea in Informatica Umanistica</publisher>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+				</availability>
+				<idno type="url">https://github.com/GiorgiaMigliozzi96/Progetto_Esame_LL1.11</idno>
+                <date when="2020-07-03" />
+			</publicationStmt>
+            <sourceDesc>
+				<bibl source="TEI-ListBibl.xml#Seminara2017" resp="#GS" ana="220">
+					<citedRange unit="page" from="289" to="290">289-290</citedRange>
+					<!-- nel caso di più pagine aggiungere from e to e poi i valori separati dal trattino-->
+				</bibl>
+                <msDesc>
+                    <msIdentifier>
+						<country>Italy</country>
+						<settlement>Catania</settlement>
+						<repository role="museum" ref="http://www.rism.info/typo3conf/ext/user_apachesolr/result.php?q=id:30003436" n="I-CATm">Museo Belliniano Catania</repository>
+						<!-- riferimento al catalogo delle sigle dei musei in cui è definito I-CATm -->
+						<!-- mettere come secondo valore di ref diel tag repository l'URI del nodo museo del dataset del Belliniano -->
+						<idno type="inventory">LL1.11</idno>						<!-- segnatura della singola lettera -->
+						<altIdentifier><idno type="collocation">in esposizione Casa Natale, sala B, vetrina 3, ripiano 2, II</idno>
+						</altIdentifier>						<!-- collocazione della lettera al museo -->
+					</msIdentifier>
+                    <msContents>
+						<msItem>
+							<author xml:lang="it" ref="TEI-ListPerson.xml#VB">Vincenzo Bellini</author>
+							<title type="uniform" xml:lang="it">
+								<persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini</persName> a		<persName ref="TEI-ListPerson.xml#VF">Vincenzo Ferlito</persName>, in	<placeName ref="TEI-ListPlace.xml#VE">Venezia</placeName>,	<date when="1832-12-13" cert="high" resp="#GS">13 dicembre 1832</date>
+							</title>
+							<textLang mainLang="it">italiano di inizio Ottocento</textLang>
+						</msItem>
+					</msContents>
+                    <physDesc>
+						<objectDesc>
+							<supportDesc>
+								<support>
+									<material>Carta sottile.</material>
+									<watermark>
+										<!-- info sulla filigrana: se c'è viene descritta in linguaggio naturale (es. forma della filigrana [circolare, lineare], la scuola di appartenenza -->
+									</watermark>
+									<stamp> Sono presenti nel fronte verso centrale e nel fronte recto centrale tracce di ceralacca rossa.
+					 						<!-- E' la descrizione in linguaggio naturale dei francobolli e dei timbri  -->
+									</stamp>
+									<!-- descrizione fisica della lettera -->
+									<p>Lettera in condizioni fisiche non ottimali scolorita e con dei buchi, composta da un solo folio, piegato in più parti; l'indirizzo è nella parte centrale del fronte verso. Carta sottile senza filigrana, colore beige, inchiostro nero. La lettera presenta due strappi e svariati buchi: gli strappi sono nella parte centrale (verticale) a sinistra e a destra; il buco più grande è al centro (verticale) in posizione centrale leggermente a sinistra, ce ne sono di più piccoli lungo le piege verticali, negli angoli in alto e in basso a sinistra e intorno al buco più grande al centro.</p>
+									<p>Il folio presenta fronte e retro. Il fronte è piegato in recto (a dx) e verso (a sx), il testo della lettera è nel retro e nel fronte recto, mentre l'indirizzo è nella parte centrale del fronte verso. Il retro contiene del testo.		
+									</p>
+								</support>
+                                <extent>
+									<measure type="folio">1</measure>				<!--  va inserita la quantità dell'oggetto, indicando in type il tipo descritto -->
+									<dimensions unit="mm">
+										<height>223</height>
+										<width>138</width>
+									</dimensions>
+								</extent>
+								<foliation>	<!-- es. folio verso a sx, folio recto a dx con suddivisioni ulteriori. -->
+									Il fronte è piegato in recto (a dx) e verso (a sx), con l'indirizzo nel verso. Il folio presenta una duplice piegatura asimmetrica in verticale e in orizzontale, con il margine inferiore piegato leggermente più ampio. Così il folio stesso funge anche da busta con l'indirizzo nella parte centrale del verso.  
+								</foliation>
+								<condition>
+									<!-- descrizione delle condizioni fisiche di conservazione della lettera -->
+									<p>Lettera in condizioni fisiche non ottimali.</p>
+								</condition>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc hands="2">
+							<handNote>
+								<p>
+									Scrittura a mano libera abbastanza leggibile. Il folio verso, nella parte centrale, presenta un'annotazione di seconda mano. 
+								</p>
+							</handNote>
+							<handNote xml:id="h1">								<!-- indica la seconda mano del catalogatore -->
+								<p>
+									Una annotazione è probabilmente dovuta ad un catalogatore e presenta il numero "15-".
+								</p>
+							</handNote>
+						</handDesc>
+                        <sealDesc>							<!-- inserire eventuali sigilli presenti -->
+							<seal>
+								<p>Il verso presenta delle tracce di un sigillo di ceralacca rossa che è stato strappato con un frammento della carta sottostante.</p>
+							</seal>
+						</sealDesc>
+                    </physDesc>
+                    <additional>
+						<adminInfo>
+							<note>		<!-- descrizione del significato della segnatura della lettera -->
+								All'interno del carteggio belliniano (LL), la segnatura LL1.11 identifica l'undicesima missiva in ordine cronologico del primo sottogruppo, che corrisponde alle lettere scritte da Vincenzo Bellini.
+							</note>
+						</adminInfo>
+					</additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+			<correspDesc>
+				<correspAction type="sent">
+					<persName ref="TEI-ListPerson.xml#VB" role="composer">Vincenzo Bellini</persName>
+                    <placeName ref="TEI-ListPlace.xml#VE"> Venezia</placeName>
+					<date when="1832-12-13" cert="high" resp="#GS" type="writing">13 dicembre 1832</date>					
+				</correspAction>
+				<correspAction type="received">
+					<persName ref="TEI-ListPerson.xml#VF">Vincenzo Ferlito</persName>
+					<placeName ref="TEI-ListPlace.xml#CT"> Catania</placeName>
+					<date>unknown</date>
+				</correspAction >
+				<correspContext>
+					<p>Non è presente un contesto di riferimento</p>
+				</correspContext>
+			</correspDesc>
+
+			<textClass>
+				<keywords scheme="http://thes.bncf.firenze.sbn.it">					<!-- soggettario della Biblioteca Nazionale di Firenze -->
+					<term resp="#GS"> lettera 	<!-- un termine tra:  lettera, biglietto, minuta -->
+					</term>
+				</keywords>
+			</textClass>
+			<langUsage>
+				<language ident="it">italiano di inizio Ottocento</language>
+                <language ident="fr">francese</language>
+			</langUsage>
+		</profileDesc>
+    </teiHeader>
+
+
+	<facsimile>
+		<surface n="1" xml:id="LL1.11_folio_1fr" start="LL1.11_fol_1fr">  <!-- FRONTE RECTO -->
+			<graphic url="immagini/LL1.11_0001.jpg" width='1701px' height='2689px'/>
+			<zone ulx="778" uly="161" lrx="1586" lry="269" rendition="Line" xml:id="LL1.11_line_1fr_01" start="LL1.11_lb_1fr_01"/>
+			<zone ulx="313" uly="352" lrx="830" lry="465" rendition="Line" xml:id="LL1.11_line_1fr_02" start="LL1.11_lb_1fr_02"/>
+			<zone ulx="586" uly="580" lrx="1661" lry="666" rendition="Line" xml:id="LL1.11_line_1fr_03" start="LL1.11_lb_1fr_03"/>
+			<zone ulx="185" uly="681" lrx="1633" lry="743" rendition="Line" xml:id="LL1.11_line_1fr_04" start="LL1.11_lb_1fr_04"/>
+			<zone ulx="168" uly="778" lrx="1630" lry="842" rendition="Line" xml:id="LL1.11_line_1fr_05" start="LL1.11_lb_1fr_05"/>
+			<zone ulx="163" uly="876" lrx="1654" lry="970" rendition="Line" xml:id="LL1.11_line_1fr_06" start="LL1.11_lb_1fr_06"/>
+			<zone ulx="147" uly="972" lrx="1638" lry="1047" rendition="Line" xml:id="LL1.11_line_1fr_07" start="LL1.11_lb_1fr_07"/>
+			<zone ulx="139" uly="1060" lrx="1601" lry="1138" rendition="Line" xml:id="LL1.11_line_1fr_08" start="LL1.11_lb_1fr_08"/>
+			<zone ulx="120" uly="1172" lrx="1622" lry="1235" rendition="Line" xml:id="LL1.11_line_1fr_09" start="LL1.11_lb_1fr_09"/>
+			<zone ulx="139" uly="1263" lrx="1630" lry="1317" rendition="Line" xml:id="LL1.11_line_1fr_10" start="LL1.11_lb_1fr_10"/>
+			<zone ulx="147" uly="1351" lrx="1615" lry="1427" rendition="Line" xml:id="LL1.11_line_1fr_11" start="LL1.11_lb_1fr_11"/>
+			<zone ulx="139" uly="1437" lrx="1645" lry="1541" rendition="Line" xml:id="LL1.11_line_1fr_12" start="LL1.11_lb_1fr_12"/>
+			<zone ulx="137" uly="1557" lrx="1534" lry="1591" rendition="Line" xml:id="LL1.11_line_1fr_13" start="LL1.11_lb_1fr_13"/>
+			<zone ulx="137" uly="1640" lrx="1624" lry="1702" rendition="Line" xml:id="LL1.11_line_1fr_14" start="LL1.11_lb_1fr_14"/>
+			<zone ulx="152" uly="1731" lrx="1637" lry="1800" rendition="Line" xml:id="LL1.11_line_1fr_15" start="LL1.11_lb_1fr_15"/>
+			<zone ulx="141" uly="1813" lrx="1604" lry="1871" rendition="Line" xml:id="LL1.11_line_1fr_16" start="LL1.11_lb_1fr_16"/>
+			<zone ulx="131" uly="1891" lrx="1645" lry="1969" rendition="Line" xml:id="LL1.11_line_1fr_17" start="LL1.11_lb_1fr_17"/>
+			<zone ulx="123" uly="2001" lrx="1654" lry="2084" rendition="Line" xml:id="LL1.11_line_1fr_18" start="LL1.11_lb_1fr_18"/>
+			<zone ulx="136" uly="2108" lrx="1638" lry="2170" rendition="Line" xml:id="LL1.11_line_1fr_19" start="LL1.11_lb_1fr_19"/>
+			<zone ulx="139" uly="2178" lrx="1663" lry="2295" rendition="Line" xml:id="LL1.11_line_1fr_20" start="LL1.11_lb_1fr_20"/>
+			<zone ulx="134" uly="2312" lrx="1645" lry="2361" rendition="Line" xml:id="LL1.11_line_1fr_21" start="LL1.11_lb_1fr_21"/>
+			<zone ulx="173" uly="2396" lrx="1658" lry="2469" rendition="Line" xml:id="LL1.11_line_1fr_22" start="LL1.11_lb_1fr_22"/>
+			<zone ulx="245" uly="2479" lrx="1643" lry="2546" rendition="Line" xml:id="LL1.11_line_1fr_23" start="LL1.11_lb_1fr_23"/>
+			<zone ulx="178" uly="2578" lrx="1651" lry="2637" rendition="Line" xml:id="LL1.11_line_1fr_24" start="LL1.11_lb_1fr_24"/>
+			<!--hotspot: due piccoli buchi nella zona centrale in alto lungo una delle pieghe-->	
+			<zone ulx="664" uly="504" lrx="768" lry="592" rendition="HotSpot" xml:id="LL1.11_hotspot_1fr_01" corresp="LL1.11_hotspot_1rr_01"/>
+			<!--hotspot: uno strappo sul bordo destro nella parte centrale (in altezza)-->	
+			<zone ulx="1524" uly="1475" lrx="1661" lry="1659" rendition="HotSpot" xml:id="LL1.11_hotspot_1fr_02" corresp="LL1.11_hotspot_1rr_02"/>
+			<!--hotspot: tre piccole macchie di ceralacca nella zona centrale al centro-->
+			<zone ulx="902" uly="1197" lrx="1136" lry="1411" rendition="HotSpot" xml:id="LL1.11_hotspot_1fr_03"/>
+		</surface>
+
+		<surface n="2" xml:id="LL1.11_folio_1rr" start="LL1.11_fol_1rr">		<!-- RETRO RECTO -->
+			<graphic url="immagini/LL1.11_0002.jpg" width='1715px' height='2689px'/>
+			<zone ulx="170" uly="573" lrx="1651" lry="637" rendition="Line" xml:id="LL1.11_line_1rr_01" start="LL1.11_lb_1rr_01"/>
+			<zone ulx="189" uly="664" lrx="1583" lry="718" rendition="Line" xml:id="LL1.11_line_1rr_02" start="LL1.11_lb_1rr_02"/>
+			<zone ulx="219" uly="769" lrx="1614" lry="832" rendition="Line" xml:id="LL1.11_line_1rr_03" start="LL1.11_lb_1rr_03"/>
+			<zone ulx="196" uly="877" lrx="1622" lry="928" rendition="Line" xml:id="LL1.11_line_1rr_04" start="LL1.11_lb_1rr_04"/>
+			<zone ulx="211" uly="980" lrx="1593" lry="1019" rendition="Line" xml:id="LL1.11_line_1rr_05" start="LL1.11_lb_1rr_05"/>
+			<zone ulx="188" uly="1063" lrx="1646" lry="1121" rendition="Line" xml:id="LL1.11_line_1rr_06" start="LL1.11_lb_1rr_06"/>
+			<zone ulx="176" uly="1164" lrx="1602" lry="1230" rendition="Line" xml:id="LL1.11_line_1rr_07" start="LL1.11_lb_1rr_07"/>
+			<zone ulx="181" uly="1273" lrx="1628" lry="1333" rendition="Line" xml:id="LL1.11_line_1rr_08" start="LL1.11_lb_1rr_08"/>
+			<zone ulx="155" uly="1370" lrx="1607" lry="1442" rendition="Line" xml:id="LL1.11_line_1rr_09" start="LL1.11_lb_1rr_09"/>
+			<zone ulx="170" uly="1484" lrx="1641" lry="1544" rendition="Line" xml:id="LL1.11_line_1rr_10" start="LL1.11_lb_1rr_10"/>
+			<zone ulx="147" uly="1614" lrx="1653" lry="1658" rendition="Line" xml:id="LL1.11_line_1rr_11" start="LL1.11_lb_1rr_11"/>
+			<zone ulx="137" uly="1718" lrx="1622" lry="1777" rendition="Line" xml:id="LL1.11_line_1rr_12" start="LL1.11_lb_1rr_12"/>
+			<zone ulx="147" uly="1827" lrx="1602" lry="1899" rendition="Line" xml:id="LL1.11_line_1rr_13" start="LL1.11_lb_1rr_13"/>
+			<zone ulx="128" uly="1969" lrx="1650" lry="2050" rendition="Line" xml:id="LL1.11_line_1rr_14" start="LL1.11_lb_1rr_14"/>
+			<zone ulx="133" uly="2068" lrx="1635" lry="2147" rendition="Line" xml:id="LL1.11_line_1rr_15" start="LL1.11_lb_1rr_15"/>
+			<zone ulx="136" uly="2180" lrx="1607" lry="2260" rendition="Line" xml:id="LL1.11_line_1rr_16" start="LL1.11_lb_1rr_16"/>	
+			<zone ulx="124" uly="2302" lrx="1630" lry="2393" rendition="Line" xml:id="LL1.11_line_1rr_17" start="LL1.11_lb_1rr_17"/>
+			<zone ulx="123" uly="2412" lrx="1645" lry="2515" rendition="Line" xml:id="LL1.11_line_1rr_18" start="LL1.11_lb_1rr_18"/>
+			<zone ulx="133" uly="2543" lrx="1663" lry="2622" rendition="Line" xml:id="LL1.11_line_1rr_19" start="LL1.11_lb_1rr_19"/>
+			<!--hotspot: due piccoli buchi nella zona centrale in alto lungo una delle pieghe-->	
+			<zone ulx="948" uly="462" lrx="1045" lry="582" rendition="HotSpot" xml:id="LL1.11_hotspot_1rr_01" corresp="LL1.11_hotspot_1fr_01"/>
+			<!--hotspot: uno strappo sul bordo sinistro nella parte centrale (in altezza)-->	
+			<zone ulx="47" uly="1457" lrx="170" lry="1642" rendition="HotSpot" xml:id="LL1.11_hotspot_1rr_02" corresp="LL1.11_hotspot_1fr_02"/>
+		</surface>
+
+		<surface n="3" xml:id="LL1.11_folio_1rv" start="LL1.11_fol_1rv">  	<!-- RETRO VERSO -->
+			<graphic url="immagini/LL1.11_0003.jpg" width='1701px' height='2689px' />
+			<zone ulx="82" uly="529" lrx="1604" lry="612" rendition="Line" xml:id="LL1.11_line_1rv_01" start="LL1.11_lb_1rv_01"/>
+			<zone ulx="63" uly="648" lrx="1588" lry="765" rendition="Line" xml:id="LL1.11_line_1rv_02" start="LL1.11_lb_1rv_02"/>
+			<zone ulx="63" uly="790" lrx="1567" lry="858" rendition="Line" xml:id="LL1.11_line_1rv_03" start="LL1.11_lb_1rv_03"/>
+			<zone ulx="53" uly="897" lrx="1643" lry="973" rendition="Line" xml:id="LL1.11_line_1rv_04" start="LL1.11_lb_1rv_04"/>
+			<zone ulx="59" uly="999" lrx="1607" lry="1092" rendition="Line" xml:id="LL1.11_line_1rv_05" start="LL1.11_lb_1rv_05"/>
+			<zone ulx="63" uly="1139" lrx="1585" lry="1209" rendition="Line" xml:id="LL1.11_line_1rv_06" start="LL1.11_lb_1rv_06"/>
+			<zone ulx="63" uly="1248" lrx="1389" lry="1326" rendition="Line" xml:id="LL1.11_line_1rv_07" start="LL1.11_lb_1rv_07"/>
+			<zone ulx="71" uly="1356" lrx="1289" lry="1445" rendition="Line" xml:id="LL1.11_line_1rv_08" start="LL1.11_lb_1rv_08"/>
+			<zone ulx="162" uly="1466" lrx="1337" lry="1564" rendition="Line" xml:id="LL1.11_line_1rv_09" start="LL1.11_lb_1rv_09"/>
+			<zone ulx="54" uly="1612" lrx="1622" lry="1689" rendition="Line" xml:id="LL1.11_line_1rv_10" start="LL1.11_lb_1rv_10"/>
+			<zone ulx="76" uly="1726" lrx="1628" lry="1799" rendition="Line" xml:id="LL1.11_line_1rv_11" start="LL1.11_lb_1rv_11"/>
+			<zone ulx="63" uly="1837" lrx="1606" lry="1916" rendition="Line" xml:id="LL1.11_line_1rv_12" start="LL1.11_lb_1rv_12"/>
+			<zone ulx="58" uly="1942" lrx="1658" lry="2037" rendition="Line" xml:id="LL1.11_line_1rv_13" start="LL1.11_lb_1rv_13"/>
+			<zone ulx="74" uly="2068" lrx="1645" lry="2167" rendition="Line" xml:id="LL1.11_line_1rv_14" start="LL1.11_lb_1rv_14"/>
+			<zone ulx="51" uly="2180" lrx="1583" lry="2268" rendition="Line" xml:id="LL1.11_line_1rv_15" start="LL1.11_lb_1rv_15"/>
+			<zone ulx="59" uly="2284" lrx="1646" lry="2373" rendition="Line" xml:id="LL1.11_line_1rv_16" start="LL1.11_lb_1rv_16"/>
+			<zone ulx="51" uly="2388" lrx="1646" lry="2456" rendition="Line" xml:id="LL1.11_line_1rv_17" start="LL1.11_lb_1rv_17"/>
+			<zone ulx="61" uly="2468" lrx="1617" lry="2541" rendition="Line" xml:id="LL1.11_line_1rv_18" start="LL1.11_lb_1rv_18"/>
+			<zone ulx="1303" uly="2573" lrx="1637" lry="2640" rendition="Line" xml:id="LL1.11_line_1rv_19" start="LL1.11_lb_1rv_19"/>
+			
+			<!--hotspot: una macchia di colorazione verde di origine sconosciuta sul margine destro al centro, sulle parole "società in" situata alla LL1.11_line_1rv_06-->
+			<zone ulx="1404" uly="1109" lrx="1622" lry="1288" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_01"/>
+			<!--hotspot: un buco nella zona centrale in alto lungo una delle pieghe-->	
+			<zone ulx="621" uly="462" lrx="739" lry="605" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_02" corresp="LL1.11_hotspot_1fv_02"/>
+			<!--hotspot: uno grappolo di piccoli buchi nel fianco sinistro al centro, vicino alla piega principale-->	
+			<zone ulx="31" uly="1110" lrx="213" lry="1284" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_03" corresp="LL1.11_hotspot_1fv_03"/>
+			<!--hotspot: un grande buco nel fianco sinistro al centro, vicino alla piega principale causato dallo strappo della ceralacca -->	
+			<zone ulx="32" uly="1286" lrx="422" lry="1520" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_04" corresp="LL1.11_hotspot_1fv_04"/>
+			<!--hotspot: un grande strappo nel fianco destro al centro, prodotto dallo strappo ceralacca -->	
+			<zone ulx="1396" uly="954" lrx="1666" lry="1657" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_05" corresp="LL1.11_hotspot_1fv_05"/>
+			<!--hotspot: un grande strappo nel fianco destro al centro, prosieguo del LL1.11_hotspot_1rv_04 causato dallo strappo della ceralacca -->	
+			<zone ulx="1022" uly="1379" lrx="1395" lry="1519" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_06" corresp="LL1.11_hotspot_1fv_06"/>
+			<!--hotspot: un piccolo buco sulla piega centrale al centro -->
+			<zone ulx="665" uly="1553" lrx="722" lry="1619" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_07" corresp="LL1.11_hotspot_1fv_07"/>
+			<!--hotspot: un buco non molto grande nel quarto inferiore della lettera al centro, al di sopra la parola "buonissima" situata alla LL1.11_line_1rv_14-->
+			<zone ulx="743" uly="2028" lrx="800" lry="2101" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_08" corresp="LL1.11_hotspot_1fv_08"/>
+			<!--hotspot: un buco piccolo nel quarto inferiore della lettera al centro, sulla piega della pagina, al di spora a destra della parola "Etna" situata alla LL1.11_line_1rv_15-->
+			<zone ulx="665" uly="2148" lrx="722" lry="2179" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_09" corresp="LL1.11_hotspot_1fv_09"/>
+			<!--hotspot: un buco piccolo nel quarto inferiore della lettera a destra verso il margine, al terminie della LL1.11_line_1rv_15-->
+			<zone ulx="1539" uly="2198" lrx="1596" lry="2234" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_10" corresp="LL1.11_hotspot_1fv_10"/>
+			<!--hotspot: un buco nella parte più in basso a destra della pagina, sulla parola "Nipote" (LL1.11_line_1rv_19)-->
+			<zone ulx="1365" uly="2530" lrx="1419" lry="2590" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_11" corresp="LL1.11_hotspot_1fv_11"/>
+		</surface>
+
+		<surface n="4" xml:id="LL1.11_folio_1fv" start="LL1.11_fol_1fv_front" start="LL1.11_fol_1fv_body">		<!-- FRONTE VERSO-->
+			<graphic url="immagini/LL1.11_0004.jpg" width='1715px' height='2707px' />
+			<!-- indirizzo destinatario -->
+			<zone ulx="376" uly="1560" lrx="596" lry="2068" rendition="Line" xml:id="LL1.11_line_1fv_01" start="LL1.11_lb_1fv_01"/>
+			<zone ulx="635" uly="897" lrx="726" lry="1476" rendition="Line" xml:id="LL1.11_line_1fv_02" start="LL1.11_lb_1fv_02"/>
+			<zone ulx="703" uly="669" lrx="880" lry="2017" rendition="Line" xml:id="LL1.11_line_1fv_03" start="LL1.11_lb_1fv_03"/>
+			<zone ulx="861" uly="708" lrx="1012" lry="1398" rendition="Line" xml:id="LL1.11_line_1fv_04" start="LL1.11_lb_1fv_04"/>
+			
+			<!--hotspot: seconda mano -->
+			<zone ulx="305" uly="954" lrx="607" lry="1422" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_01"/>
+			<!-- hotspot: un buco nella zona centrale in alto lungo una delle pieghe (nell'immagine si intravede il doppio budo del retro recto LL1.11_hotspot_1rr_01)-->
+			<zone ulx="976" uly="518" lrx="1060" lry="601" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_02" corresp="LL1.11_hotspot_1rv_02"/>
+			<!-- hotspot: uno grappolo di piccoli buchi nel fianco destro al centro, vicino alla piega principale-->
+			<zone ulx="1524" uly="1123" lrx="1690" lry="1320" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_03" corresp="LL1.11_hotspot_1rv_03"/>
+			<!-- hotspot: un grande buco nel fianco destro al centro, vicino alla piega principale, causato dallo strappo della ceralacca e con tracce di ceralacca-->
+			<zone ulx="1312" uly="1287" lrx="1688" lry="1536" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_04" corresp="LL1.11_hotspot_1rv_04"/>
+			<!-- hotspot: un grande strappo nel fianco sinistro al centro, prodotto dallo strappo ceralacca-->
+			<zone ulx="73" uly="1178" lrx="301" lry="1638" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_05" corresp="LL1.11_hotspot_1rv_05"/>
+			<!-- hotspot: un grande strappo nel fianco sinistro al centro, prosieguo del LL1.11_hotspot_1fv_05 causato dallo strappo della ceralacca-->
+			<zone ulx="300" uly="1385" lrx="736" lry="1502" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_06" corresp="LL1.11_hotspot_1rv_06"/> 
+			<!--hotspot: un piccolo buco sulla piega centrale al centro -->
+			<zone ulx="1016" uly="1566" lrx="1048" lry="1642" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_07" corresp="LL1.11_hotspot_1rv_07"/>
+			<!--hotspot: un buco non molto grande nel quarto inferiore della lettera al centro, al di sopra la parola "buonissima" situata alla LL1.11_line_1rv_14-->
+			<zone ulx="928" uly="2056" lrx="977" lry="2111" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_08" corresp="LL1.11_hotspot_1rv_08"/>
+			<!--hotspot: un buco piccolo nel quarto inferiore della lettera al centro, sulla piega della pagina, al di spora a destra della parola "Etna" situata alla LL1.11_line_1rv_15-->
+			<zone ulx="1011" uly="2171" lrx="1056" lry="2196" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_09" corresp="LL1.11_hotspot_1rv_09"/>
+			<!--hotspot: un buco piccolo nel quarto inferiore della lettera a sinistra verso il margine, al terminie della LL1.11_line_1rv_15-->
+			<zone ulx="116" uly="2213" lrx="181" lry="2253" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_10" corresp="LL1.11_hotspot_1rv_10"/>
+			<!--hotspot: un buco nella parte più in basso a sinistra della pagina, sulla parola "Nipote" (LL1.11_line_1rv_19)-->
+			<zone ulx="305" uly="2546" lrx="359" lry="2601" rendition="HotSpot" xml:id="LL1.11_hotspot_1fv_11" corresp="LL1.11_hotspot_1rv_11"/>
+			
+		</surface>
+	</facsimile>
+
+	<text type="letter" xml:id="LL1.11" subtype="manuscript" n="LL1.11" >
+		<front>		<!-- FRONTE VERSO -->
+			<pb n="4" xml:id="LL1.11_fol_1fv_front" facs="#LL1.11_folio_1fv" type="fronte-verso"/>
+			<div type="envelope">  <!-- fronte verso usato come busta -->
+				<div type="destination">
+					<ab type="receiver">
+						<address>		<!-- informazioni del destinatario -->
+							<lb xml:id="LL1.11_lb_1fv_01" n="1" facs="#LL1.11_line_1fv_01"/>
+							<addrLine>en Sicile</addrLine>
+							<lb xml:id="LL1.11_lb_1fv_02" n="2" facs="#LL1.11_line_1fv_02"/>
+							<addrLine>à Monsieur</addrLine>
+							<lb xml:id="LL1.11_lb_1fv_03" n="3" facs="#LL1.11_line_1fv_03"/>
+							<addrLine>Monsieur <persName ref="TEI-ListPerson.xml#VF">Vincent Freliti</persName></addrLine>
+							<lb xml:id="LL1.11_lb_1fv_04" n="4" facs="#LL1.11_line_1fv_04"/>
+							<addrLine>à <placeName ref="encoding/TEI-ListPlace.xml#CT">Catane</placeName></addrLine>
+						</address>
+					</ab>
+				</div>
+			</div>
+		</front>
+
+		<body xml:lang="it">
+			<div type="fronte-verso_retro">
+				<pb n="1" xml:id="LL1.11_fol_1fr" facs="#LL1.11_folio_1fr" type="fronte-recto"/>
+				<div type="opener" n="o_01">
+					<dateline n="ab_01">
+						<hi rend="align(right)">
+  							<s type="sentence" n="s_01">
+								<lb xml:id="LL1.11_lb_1fr_01" n="1" facs="#LL1.11_line_1fr_01"/>
+								<address>
+									<addrLine>
+										<placeName ref="TEI-ListPlace.xml#VE">Venezia</placeName>
+									</addrLine>
+								</address>
+								<date when="1832-12-13">13: <w>
+									<choice>
+										<orig><foreign xml:lang="fr"><abbr>Dec<am>:<g rend="superscript">e</g></am></abbr></foreign></orig>
+										<reg><expan>Dicembre</expan></reg>
+									</choice>
+								</w> 32:</date>
+							</s>
+						</hi>
+					</dateline>
+				</div>
+				<div type="letter-body" n="t_01"> 
+					<salute  n="ab_02">
+						<s type="sentence" n="s_02">
+							<lb xml:id="LL1.11_lb_1fr_02" n="2" facs="#LL1.11_line_1fr_02"/>
+							<hi rend="align(left)">Mio caro
+									<persName ref="TEI-ListPerson.xml#VF">Zio <supplied resp="#GS" cert="high">Vincenzo Ferlito </supplied></persName>
+							</hi>
+						</s>
+					</salute>
+					<ab type="parag" rend="first_line_indented" n="ab_03">
+						<s type="sentence" n="s_03">
+							<lb xml:id="LL1.11_lb_1fr_03" n="3" facs="#LL1.11_line_1fr_03"/>
+							La <w>
+								<choice>
+									<abbr>vra</abbr>
+									<expan resp="#GS">v<ex>ost</ex>ra</expan>
+								</choice>
+							</w> lettera, che ebbi quest’ 	
+							<lb xml:id="LL1.11_lb_1fr_04" n="4" facs="#LL1.11_line_1fr_04"/>
+							oggi da <persName ref="TEI-ListPerson.xml#FFlo"><supplied resp="#GS" cert="high">Francesco </supplied>Florimo</persName> mi diede il contento di sentire
+							<lb xml:id="LL1.11_lb_1fr_05" n="5" facs="#LL1.11_line_1fr_05"/>
+							che la famiglia <persName ref="TEI-ListPerson.xml#IGM">Moschetti <supplied resp="#GS" cert="high">Ignazio Giuffrida Moschetti </supplied></persName> è ancora <w>istessa
+								<lb xml:id="LL1.11_lb_1fr_06" n="6" facs="#LL1.11_line_1fr_06" break="no" rend="double stroke"/>
+							mente</w> a me affezzionata.
+						</s>
+						<s type="sentence" n="s_04">
+							Io scriverò a <w>tut
+								<lb xml:id="LL1.11_lb_1fr_07" n="7" facs="#LL1.11_line_1fr_07" break="no" rend="double stroke"/>
+							ti</w> di <persName ref="TEI-ListPerson.xml#IGM">quella famiglia</persName> secondo crederò, ed in
+							<lb xml:id="LL1.11_lb_1fr_08" n="8" facs="#LL1.11_line_1fr_08"/>
+							tali sensi da fargli dimenticare, ch‘io
+							<lb xml:id="LL1.11_lb_1fr_09" n="9" facs="#LL1.11_line_1fr_09"/>
+							avessi potuto non più stimarli: e come <subst>
+								<del rend="overstrike"><unclear reason="cancelled">xxx</unclear></del>
+								<add place="supralinear">avrei</add>
+							</subst>
+							<lb xml:id="LL1.11_lb_1fr_10" n="10" facs="#LL1.11_line_1fr_10"/>
+							potuto obbliare la loro amicizia?
+						</s>
+						<s type="sentence" n="s_05">
+							Basta,
+							<lb xml:id="LL1.11_lb_1fr_11" n="11" facs="#LL1.11_line_1fr_11"/>
+							rimedierò a tutto ora che sò esser ben
+							<lb xml:id="LL1.11_lb_1fr_12" n="12" facs="#LL1.11_line_1fr_12"/>
+							disposti verso di me, a dispetto del mio <w>silen
+								<lb xml:id="LL1.11_lb_1fr_13" n="13" facs="#LL1.11_line_1fr_13" break="no" rend="double stroke"/>
+							zio</w>.
+						</s>
+						<s type="sentence" n="s_06">
+							– Se potete presto, e troverete <damage><supplied resp="#GS">un</supplied></damage>
+							<lb xml:id="LL1.11_lb_1fr_14" n="14" facs="#LL1.11_line_1fr_14"/>
+							commodo per <placeName ref="TEI-ListPlace.xml#TS">Trieste</placeName>, come vi dissi nell’<w>ul
+								<lb xml:id="LL1.11_lb_1fr_15" n="15" facs="#LL1.11_line_1fr_15" break="no" rend="double stroke"/>
+							tima</w> mia, vorrei che mi mandaste due <w>pic
+								<lb xml:id="LL1.11_lb_1fr_16" n="16" facs="#LL1.11_line_1fr_16" break="no" rend="double stroke"/>
+							coli</w> bariletti di vino del piú eccellente,
+							<lb xml:id="LL1.11_lb_1fr_17" n="17" facs="#LL1.11_line_1fr_17"/>
+							ognuno d’un quarto e ½ circa di <term subtype="other-term" ref="TEI-ListTerm.xml#salma">salma</term>:
+							<lb xml:id="LL1.11_lb_1fr_18" n="18" facs="#LL1.11_line_1fr_18"/>
+							ambidue li dovreste dirigere al <w>
+								<choice>
+									<abbr>Sig<am>:<g rend="superscript">r</g></am></abbr>
+									<expan resp="#ADS">Sig<ex resp="#ADS">nor</ex></expan>
+								</choice>
+							</w> <persName ref="TEI-ListPerson.xml#PT"><w>Pao
+								<lb xml:id="LL1.11_lb_1fr_19" n="19" facs="#LL1.11_line_1fr_19" break="no" rend="double stroke"/>
+							lo</w> Tropeani</persName> di <placeName ref="TEI-ListPlace.xml#TS">Trieste</placeName> per rimetterli
+							<lb xml:id="LL1.11_lb_1fr_20" n="20" facs="#LL1.11_line_1fr_20"/>
+							a <placeName ref="TEI-ListPlace.xml#VE">Venezia</placeName> al <w>
+								<choice>
+									<abbr>Sig<am>:<g rend="superscript">r</g></am></abbr>
+									<expan  resp="#GM">Sig<ex resp="#GM">nor</ex></expan>
+								</choice>
+							</w> <persName ref="TEI-ListPerson.xml#GBP">Giovan Battista <w>Pe
+								<lb xml:id="LL1.11_lb_1fr_21" n="21" facs="#LL1.11_line_1fr_21" break="no" rend="double stroke"/>
+							rucchini</w></persName>: uno di questi vorrei regalarlo alla
+							<lb xml:id="LL1.11_lb_1fr_22" n="22" facs="#LL1.11_line_1fr_22"/>
+							celebre <persName ref="TEI-ListPerson.xml#GNP"><supplied resp="#GS" cert="high">Giuditta </supplied>Pasta</persName>; mentre che qui si trova.
+						</s>
+					</ab>
+					<ab type="parag" rend="first_line_indented" n="ab_04">
+						<s type="sentence" n="s_07">
+							<lb xml:id="LL1.11_lb_1fr_23" n="23" facs="#LL1.11_line_1fr_23"/>
+							Credete che <persName ref="TEI-ListPerson.xml#FFlo"><supplied resp="#GS" cert="high">Francesco </supplied>Florimo</persName> vi è amico!
+						</s>
+						<s type="sentence" n="s_08">
+							Io non sò
+							<lb xml:id="LL1.11_lb_1fr_24" n="24" facs="#LL1.11_line_1fr_24"/>
+							che diavolo si è frapposto: da che successe l’<w>af
+
+								<pb n="2" xml:id="LL1.11_fol_1rr" facs="#LL1.11_folio_1rr" type="retro-recto"/>
+
+								<lb xml:id="LL1.11_lb_1rr_01" n="1" facs="#LL1.11_line_1rr_01" break="no" rend="double stroke"/>
+							fare</w> di <persName ref="TEI-ListPerson.xml#FS"><supplied resp="#GS" cert="high">Filippo </supplied>Santocanale</persName> è diventato <w>intratta
+								<lb xml:id="LL1.11_lb_1rr_02" n="2" facs="#LL1.11_line_1rr_02" break="no" rend="double stroke"/>
+							bile</w>: io non glie ne posso parlare, e vedo
+							<lb xml:id="LL1.11_lb_1rr_03" n="3" facs="#LL1.11_line_1rr_03"/>
+							bene che persona gli rapportò delle cose
+							<lb xml:id="LL1.11_lb_1rr_04" n="4" facs="#LL1.11_line_1rr_04"/>
+							inventate, alterate, e quindi anche egli
+							<lb xml:id="LL1.11_lb_1rr_05" n="5" facs="#LL1.11_line_1rr_05"/>
+							merita compatimento: amiamo i nostri
+							<lb xml:id="LL1.11_lb_1rr_06" n="6" facs="#LL1.11_line_1rr_06"/>
+							amici coi suoi difettucci, perché dunque
+							<lb xml:id="LL1.11_lb_1rr_07" n="7" facs="#LL1.11_line_1rr_07"/>
+							tutti restammo misantropi.
+						</s>
+						<s type="sentence" n="s_09">
+							Io ho una
+							<lb xml:id="LL1.11_lb_1rr_08" n="8" facs="#LL1.11_line_1rr_08"/>
+							prova costante del suo cuore, in 14: <w>an
+								<lb xml:id="LL1.11_lb_1rr_09" n="9" facs="#LL1.11_line_1rr_09" break="no" rend="double stroke"/>
+							ni</w> di vera e tenerissima amicizia; quindi
+							<lb xml:id="LL1.11_lb_1rr_10" n="10" facs="#LL1.11_line_1rr_10"/>
+							voi col tempo lo conoscerete e nei suoi
+							<lb xml:id="LL1.11_lb_1rr_11" n="11" facs="#LL1.11_line_1rr_11"/>
+							preggi e nei suoi difetti, e l’amerete
+							<lb xml:id="LL1.11_lb_1rr_12" n="12" facs="#LL1.11_line_1rr_12"/>
+							senza alcun dubbio.
+						</s>
+						<s type="sentence" n="s_10">
+							– L’affare che ha
+							<lb xml:id="LL1.11_lb_1rr_13" n="13" facs="#LL1.11_line_1rr_13"/>
+							sparso <persName ref="TEI-ListPerson.xml#AT"><supplied resp="#GS" cert="high">Alessandro </supplied>Tortelli</persName> per la <rs type="work" ref="TEI-ListWork.xml#Sonnambula"><hi rend="underline">Sonnambula</hi></rs>
+							<lb xml:id="LL1.11_lb_1rr_14" n="14" facs="#LL1.11_line_1rr_14"/>
+							è una <term subtype="other-term" ref="TEI-ListTerm.xml#bubbola">bubbola</term>: a me non mi fù <w>doman
+								<lb xml:id="LL1.11_lb_1rr_15" n="15" facs="#LL1.11_line_1rr_15" break="no" rend="double stroke"/>
+							data</w> la <rs type="work" ref="TEI-ListWork.xml#Sonnambula"><hi rend="underline">Sonnambula</hi></rs> per <placeName ref="TEI-ListPlace.xml#CT">Catania</placeName>, né
+							<lb xml:id="LL1.11_lb_1rr_16" n="16" facs="#LL1.11_line_1rr_16"/>
+							io ho scritto a persona; quindi ditegli
+							<lb xml:id="LL1.11_lb_1rr_17" n="17" facs="#LL1.11_line_1rr_17"/>
+							all’<term subtype="music-term" ref="TEI-ListTerm.xml#impresario">impresa</term> che se vorrà acquistare la
+							<lb xml:id="LL1.11_lb_1rr_18" n="18" facs="#LL1.11_line_1rr_18"/>
+							<rs type="work" ref="TEI-ListWork.xml#Sonnambula">Sonnambula</rs> mi scriva il prezzo che 
+							<subst>
+								<add place="supralinear">può</add>
+								<del rend="overstrike"><w>po 
+									<lb xml:id="LL1.11_lb_1rr_19" n="19" facs="#LL1.11_line_1rr_19" break="no" rend="double stroke"/>
+								trà</w></del>
+							</subst>
+							offrire: io ne farò parte ai <persName>miei socii</persName>,
+
+							<pb n="3" xml:id="LL1.11_fol_1rv" facs="#LL1.11_folio_1rv" type="retro-verso"/>
+
+							<lb xml:id="LL1.11_lb_1rv_01" n="1" facs="#LL1.11_line_1rv_01"/>
+							e spero col mio mezzo fargliela avere a
+							<lb xml:id="LL1.11_lb_1rv_02" n="2" facs="#LL1.11_line_1rv_02"/>
+							quel prezzo onesto che si potrà dare: fate
+							<lb xml:id="LL1.11_lb_1rv_03" n="3" facs="#LL1.11_line_1rv_03"/>
+							riflettere che 
+							<subst>
+								<del rend="overstrike"><unclear reason="cancelled">xxx</unclear></del>
+								<add place="supralinear">per la </add>
+							</subst>
+							copia dello <term subtype="music-term" ref="TEI-ListTerm.xml#spartito">spartito</term> si
+							<lb xml:id="LL1.11_lb_1rv_04" n="4" facs="#LL1.11_line_1rv_04"/>
+							dà al copista, in <placeName ref="TEI-ListPlace.xml#MI">Milano</placeName>, 25: ducati; quindi
+							<lb xml:id="LL1.11_lb_1rv_05" n="5" facs="#LL1.11_line_1rv_05"/>
+							si regolino da questo prezzo per offrire il di
+							<lb xml:id="LL1.11_lb_1rv_06" n="6" facs="#LL1.11_line_1rv_06"/>
+							più che discretamente potrà la società <w>in
+								<lb xml:id="LL1.11_lb_1rv_07" n="7" facs="#LL1.11_line_1rv_07" break="no" rend="double stroke"/>
+							troitare</w>.
+						</s>
+						<s type="sentence" n="s_10">
+							<placeName ref="TEI-ListPlace.xml#PA">Palermo</placeName> l’ha pagato
+							<lb xml:id="LL1.11_lb_1rv_08" n="8" facs="#LL1.11_line_1rv_08"/>
+							<damage><gap reason="lost"/></damage> franchi: sia di regola.				
+						</s>
+					</ab>
+					<ab type="parag" rend="first_line_indented" n="ab_05">
+						<s type="sentence" n="s_11">
+							<lb xml:id="LL1.11_lb_1rv_09" n="9" facs="#LL1.11_line_1rv_09"/>
+							Il poeta <persName ref="TEI-ListPerson.xml#FR"><supplied resp="#GS" cert="high">Felice </supplied>Romani</persName> non mi ha dato
+							<lb xml:id="LL1.11_lb_1rv_10" n="10" facs="#LL1.11_line_1rv_10"/>
+							più poesia: il governo ha preso delle <w>mi
+								<lb xml:id="LL1.11_lb_1rv_11" n="11" facs="#LL1.11_line_1rv_11" break="no" rend="double stroke"/>
+							sure</w>, e vedremo come finirà.
+						</s>
+						<s type="sentence" n="s_12">
+							Io stò facendo
+							<lb xml:id="LL1.11_lb_1rv_12" n="12" facs="#LL1.11_line_1rv_12"/>
+							le prove della <rs type="work" ref="TEI-ListWork.xml#Norma">Norma</rs>.
+						</s>
+						<s type="sentence" n="s_13">
+							L’aspettativa è
+							<lb xml:id="LL1.11_lb_1rv_13" n="13" facs="#LL1.11_line_1rv_13"/>
+							grande e chi sà come anderà.
+						</s>
+						<s type="sentence" n="s_14">
+							– La mia
+							<lb xml:id="LL1.11_lb_1rv_14" n="14" facs="#LL1.11_line_1rv_14"/>
+							salute è buonissima.
+						</s>
+						<s type="sentence" n="s_15">
+							–  Sento l’eruzione
+							<lb xml:id="LL1.11_lb_1rv_15" n="15" facs="#LL1.11_line_1rv_15"/>
+							del nostro <placeName ref="TEI-ListPlace.xml#Etna">Etna</placeName>.
+						</s>
+					</ab>
+				</div>
+				<div type="closer" n="c_01">
+					<salute n="ab_06">
+						<s type="sentence" n="s_16">
+							– Ricordatemi a tutti o
+							<lb xml:id="LL1.11_lb_1rv_16" n="16" facs="#LL1.11_line_1rv_16"/>
+							miei parenti in particolare ai miei <persName ref="TEI-ListPerson.xml#AF TEI-ListPerson.xml#RB">genitori</persName>:
+							<lb xml:id="LL1.11_lb_1rv_17" n="17" facs="#LL1.11_line_1rv_17"/>
+							voi accettate i miei <w>
+								<choice>
+									<abbr>abb<am>:<g rend="superscript">ci</g></am></abbr>
+									<expan>abb<ex resp="#ADS">racci</ex></expan>
+								</choice>
+							</w> ed un bacio per la
+							<lb xml:id="LL1.11_lb_1rv_18" n="18" facs="#LL1.11_line_1rv_18"/>
+							mia cara <persName ref="TEI-ListPerson.xml#RM">zia Sara</persName>, e <w>
+								<choice>
+									<abbr>cred<am>:<g rend="superscript">mi</g></am></abbr>
+									<expan>cred<ex resp="#GM">etemi</ex></expan>
+								</choice>
+							</w> Vostro <w>
+								<choice>
+									<abbr>aff<am>smo</am></abbr>
+									<expan>aff<ex resp="#ADS">ezionatissimo</ex></expan>
+								</choice>
+							</w>
+							<lb xml:id="LL1.11_lb_1rv_19" n="19" facs="#LL1.11_line_1rv_19"/>
+							<hi rend="underline align(right)">
+								<persName ref="TEI-ListPerson.xml#VB" role="composer">Nipote<supplied resp="#GS" cert="high"> Vincenzo Bellini</supplied></persName>
+							</hi>
+						</s>
+					</salute>
+				</div>
+			</div>
+			<div type="fronte-verso">
+				<pb n="4" xml:id="LL1.11_fol_1fv_body" facs="#LL1.11_folio_1fv" type="fronte-verso"/>
+				<div type="destination">
+					<ab type="reciver">
+						<address>		<!-- informazioni del destinatario -->
+							<lb n="1" facs="#LL1.11_line_1fv_01"/>
+							<addrLine>en Sicile</addrLine>
+							<lb n="2" facs="#LL1.11_line_1fv_02"/>
+							<addrLine>à Monsieur</addrLine>
+							<lb n="3" facs="#LL1.11_line_1fv_03"/>
+							<addrLine>Monsieur <persName ref="TEI-ListPerson.xml#VF">Vincent Ferliti</persName></addrLine>
+							<lb n="4" facs="#LL1.11_line_1fv_04"/>
+							<addrLine>à <placeName ref="TEI-ListPlace.xml#CT">Catane</placeName></addrLine>
+						</address>
+					</ab>
+				</div>
+				<div type="paratext">
+					<ab type="paratext" subtype="addition" hand="#h1" xml:id="LL1.11_hs_1fv_01" facs="#LL1.11_hotspot_1fv_01">	<!-- seconda mano del bibliotecario -->
+						<fw type="catalogNum"><idno type="oldCat">15–</idno></fw>
+					</ab>
+				</div>
+			</div>	
+		</body>
+		<back>
+			<!-- inserire le note -->
+			<div type="notes">
+				<div type="ann_notes">					<!-- indicare con resp se le note sono dell'edizione critica o di altra responsabilità-->
+					<!--<note xml:id="LL1_11_note1" resp="#GS">
+						<p>
+							<persName ref="TEI-ListPerson.xml#">Ignazio Giuffrida Moschetti</persName>, catanese, era amico della famiglia Bellini e padre di <persName ref="TEI-ListPerson.xml#">Angelica Paola Giuffrida</persName>.
+						</p>
+					</note>
+					<note xml:id="LL1_11_note2" resp="#GS">
+						<p>
+							<persName ref="TEI-ListPerson.xml#">Filippo Santocanale</persName> (<placeName ref="TEI-ListPlace.xml#">Palermo</placeName>, 1798-1884), avvocato. Bellini strinse amicizia con lui nel 1832 durante il soggiorno a Palermo; in quell’occasione il musicista ebbe modo di frequentare anche la cerchia degli amici di Santocanale (i cosiddetti “conciarioti”), che avrebbe sempre ricordato nelle sue lettere.
+						</p>
+					</note>
+					<note xml:id="LL1_11_note3" resp="#GS">
+						<p>
+							Si trattava di <persName ref="TEI-ListPerson.xml#">Alessandro Tortelli</persName>, primo violoncello nell’orchestra del <orgName type="theatre" ref="TEI-ListOrganization.xml#">Teatro Comunale di Catania</orgName>.
+						</p>
+					</note>-->
+				</div>
+
+				<div type="bibliography">
+					<listBibl xml:id="LL1_11_bibliography">
+						<head>Bibliography of the letter LL1.11 </head>
+						<bibl xml:id="LL1_11_Pastura">
+							 	<ref target="TEI-ListBibl.xml#Pastura1959">
+									 <bibl>
+										<author>Pastura</author>
+										<date when="1959">1959</date>
+										<citedRange unit="page" from="358" to="359">358-359</citedRange>
+									</bibl>
+								</ref>
+						</bibl>
+						<bibl xml:id="LL1_11_Neri">
+								<ref target="TEI-ListBibl.xml#Neri2005">
+									<bibl>
+										<author>Neri</author>
+										<date when="2005">2005</date>
+										<citedRange unit="page" from="243" to="244">243-244</citedRange>
+									</bibl>
+								</ref>
+						</bibl>
+					</listBibl>
+				</div>
+			</div>
+		</back>
+	</text>
+</TEI>
