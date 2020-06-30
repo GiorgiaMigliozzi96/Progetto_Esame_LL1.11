@@ -31,6 +31,15 @@
                         <country key="IT">Italia</country>
                         <note></note>
                     </place>
+                    <place xml:id="Etna">
+                        <placeName ref="http://www.treccani.it/enciclopedia/etna/">
+                            <geogName>Etna</geogName>
+                            <settlement type="city" ref="#CT">Catania</settlement>
+                            <region>Sicilia</region>
+                            <country key="IT">Italia</country>
+                        </placeName>
+                        <note resp="#GM"></note>
+                    </place>
                     <place xml:id="FI">
                         <placeName ref="http://www.geonames.org/3176959 http://www.treccani.it/enciclopedia/firenze/">Firenze</placeName>
                         <country key="IT">Italia</country>
@@ -58,6 +67,11 @@
                         <country key="FR">France</country>
                         <note></note>
                     </place>
+                    <place xml:id="PA">
+                        <placeName ref="http://www.treccani.it/enciclopedia/palermo/">Palermo</placeName>
+                        <country key="IT">Italia</country>
+                        <note resp="#GM"></note>
+                    </place>
                      <place xml:id="Paris">
                         <placeName ref="http://www.geonames.org/2988507 http://www.treccani.it/enciclopedia/parigi/">Paris</placeName>
                         <country key="FR">France</country>
@@ -81,6 +95,11 @@
 														</p>                        											
                         	</note>
                     </place>
+                    <place xml:id="TS">
+                        <placeName ref="http://www.treccani.it/enciclopedia/trieste/">Trieste</placeName>
+                        <country key="IT">Italia</country>
+                        <note resp="#GM"></note>
+                    </place>   
                     <place xml:id="TO">
                         <placeName ref="http://www.geonames.org/3165524 http://www.treccani.it/enciclopedia/torino/">Torino</placeName>
                         <country key="IT">Italia</country>

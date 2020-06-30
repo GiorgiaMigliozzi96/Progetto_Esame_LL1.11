@@ -220,7 +220,25 @@
                         (fr.: "tragedia lirica") Termine con cui a partire dal 1740 circa fu definita la <term subtype="music-term">tragédie en musique</term>, il più importante genere del <term subtype="music-term">teatro musicale</term>, concepito nell'ambito della Académie royale de musique fondata da Luigi XIV nel 1672 e realizzato con la collaborazione tra Lully e il poeta Philippe Quinault. Ispirata ai modelli aulici della tragedia letteraria (Corneille, Racine, Voltaire), nel corso di un secolo e mezzo la tragédie lyrique conservò quasi intatte alcune delle sue caratteristiche originarie: argomento mitologico o eroico, articolazione del dramma in un <term subtype="music-term">prologo</term> e cinque <term subtype="music-term" ref="#atto">atti</term> (eliminato il primo, ridotti spesso a tre i secondi verso la fine del Settecento), linguaggio letterario elevato, grande attenzione alla declamazione del testo e impiego limitato del canto virtuosistico, struttura musicale costituita da una successione di <term subtype="music-term">récits</term>, <term subtype="music-term">airs</term> solistici e corali, <term subtype="music-term">entrées</term> e <term subtype="music-term">diverissements</term>, assai meno distinti tra loro dei <term subtype="music-term">numeri</term> dell'<term subtype="music-term" ref="#opera">opera</term> italiana. <gap reason="editorial"/>
                         </gloss>
                     </item>
-                      	
+                    
+                    <label>
+                        <term subtype="other-term" xml:lang="it" xml:id="salma" key="">Salma</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="it" target="#salma" source="http://www.treccani.it/enciclopedia/salma_%28Enciclopedia-Italiana%29/">
+                            Misura di capacità per aridi, usata, in Italia, e particolarmente in Sicilia, prima dell'adozione del sistema metrico decimale. La <term subtype="other-term">salma</term> siciliana equivaleva a l. 275,08.V'era anche una <term subtype="other-term">salma</term> di Alessandria, equivalente a l. 213,25. In Sicilia si chiamava pure "<term subtype="other-term">salma</term>" una misura di superficie, che equivaleva a metri quadrati 17.462,59.
+                        </gloss>
+                    </item>
+                    
+                    <label>
+                        <term subtype="other-term" xml:lang="it" xml:id="bubbola" key="">bubbola</term>
+                    </label>
+                    <item>
+                        <gloss xml:lang="it" target="#bubbola" source="http://www.treccani.it/vocabolario/bubbola3/">
+                            (1) Fandonia, frottola: tutte <term subtype="other-term">bubbole</term>! (2) Bagattella, inezia, cosa da niente: lascia perdere, sono <term subtype="other-term">bubbole</term>; discorsi, che lui tirò in lungo, ritenendo più d’una volta la compagnia che voleva andarsene, e fermandola poi ancora un pochino sull’uscio di strada, sempre a parlar di bubbole (Manzoni).
+                        </gloss>
+                    </item>
+                     
                 </list>
             </sourceDesc>
         </fileDesc>
