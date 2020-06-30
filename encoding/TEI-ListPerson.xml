@@ -615,13 +615,197 @@
 							</note>
 					</person>
  
+		<person xml:id="FFlo"> 
+          	<persName role="composer musicologist librarian">
+          		<ref target="http://www.treccani.it/enciclopedia/francesco-florimo_(Dizionario-Biografico)/"/>
+              <forename>Francesco</forename>
+              <surname>Florimo</surname>
+            </persName>
+            <sex>M </sex>
+            <birth><date when="1800-10-12">12 ottobre 1800</date>
+            	<placeName>
+            			<settlement type="municipality">San Giorgio Morgeto</settlement>
+            	 		<settlement type="provincia" key="RC">Reggio Calabria</settlement>
+            	 		<country key="IT">Italia</country>
+            	</placeName>
+            </birth>
+            <death><date when="1888-12-18">18 dicembre 1888</date>
+             	<placeName  ref="TEI_ListPlace.xml/#NA">
+            			<settlement type="municipality">Napoli</settlement>
+            	 		<settlement type="provincia" key="NA">Napoli</settlement>
+            	 		<country key="IT">Italia</country>
+            	</placeName>
+           </death>	
+        </person>
+
+		<person xml:id="IGM"> 
+          	<persName>
+              <forename>Ignazio</forename>
+              <surname>Giuffrida Moschetti</surname>
+            </persName>
+            <sex>M </sex>
+            <birth><date type="unknown" />
+            	<placeName  ref="TEI_ListPlace.xml/#CT">
+					<settlement type="provincia" key="CT">Catania</settlement>
+					<country key="IT">Italia</country>
+				</placeName>
+            </birth>
+            <death><date type="unknown" />
+             	<placeName type="unknown" />
+            </death>	
+		    <note source="TEI-ListBibl.xml#Seminara2017" resp="#GS" ana="437">
+                  <bibl>
+                      	  <citedRange unit="page" from="262" to="262">262</citedRange>
+                  </bibl>
+                  <p> Ignazio Giuffrida Moschetti, catanese, era amico della famiglia Bellini e padre di <persName ref="#AGP">Angelica Paola Giuffrida</persName>.
+                 </p>
+			</note>
+        </person>
+
+		<person xml:id="AGP"> 
+          	<persName>
+              <forename>Angelica Paola</forename>
+              <surname>Giuffrida</surname>
+            </persName>
+            <sex>F </sex>
+            <birth><date type="unknown" />
+            	<placeName type="unknown" />
+            </birth>
+            <death><date type="unknown" />
+             	<placeName type="unknown" />
+           </death>	
+        </person>
+
+		<person xml:id="PT"> 
+          	<persName>
+              <forename>Paolo</forename>
+              <surname>Tropeani</surname>
+            </persName>
+            <sex>M </sex>
+            <birth><date type="unknown" />
+            	<placeName type="unknown" />
+            </birth>
+            <death><date type="unknown" />
+             	<placeName type="unknown" />
+           </death>	
+        </person>
+
+		<person xml:id="GBP"> 
+          	<persName>
+              <ref target="http://www.treccani.it/enciclopedia/giovanni-battista-perucchini_%28Dizionario-Biografico%29/" />
+			  <forename>Giovan Battista</forename>
+              <surname>Perucchini</surname>
+            </persName>
+            <sex>M </sex>
+            <birth><date when="1784-06-08"> 08 giugno 1784</date>
+            	<placeName>
+            	 		<settlement type="provincia" key="BG">Bergamo</settlement>
+            	 		<country key="IT">Italia</country>
+            	</placeName>
+            </birth>
+            <death><date when="1870-02-06"> 06 febbraio 1870</date>
+             	<placeName type="unknown" />
+           </death>	
+        </person>
+
+		<person xml:id="GNP"> 
+          	<persName role="singer">
+			  <ref="http://www.treccani.it/enciclopedia/giuditta-pasta/ http://www.treccani.it/enciclopedia/giuditta-negri_%28Dizionario-Biografico%29/"/>
+              <forename>Giuditta</forename>
+              <surname>Negri Pasta</surname>
+            </persName>
+            <sex>F </sex>
+            <birth><date when="1797-10-26"> 26 ottobre 1797</date>
+            	<placeName>
+					<settlement type="municipality">Saronno</settlement>
+					<settlement type="provincia" key="VA">Varese</settlement>
+					<country key="IT">Italia</country>
+				</placeName>
+            </birth>
+            <death><date when="1865-05-01"> 1 aprile 1865</date>
+             	<placeName>
+					<settlement type="municipality">Blevio</settlement>
+					<settlement type="provincia" key="CO"  ref="TEI_ListPlace.xml/#CO">Como</settlement>
+					<country key="IT">Italia</country>
+				</placeName>
+            </death>
+        </person>
+
+		<person xml:id="FS"> 
+          	<persName role="lawyer">
+              <forename>Filippo</forename>
+              <surname>Santocanale</surname>
+            </persName>
+            <sex>M </sex>
+            <birth><date when="1798"> 1798</date>
+            	<placeName  ref="TEI_ListPlace.xml/#PA">
+					<settlement type="provincia" key="PA">Palermo</settlement>
+					<country key="IT">Italia</country>
+				</placeName>
+            </birth>
+            <death><date when="1884-02-03"> 3 febbraio 1884</date>
+             	<placeName ref="TEI_ListPlace.xml/#PA">
+					<settlement type="provincia" key="PA">Palermo</settlement>
+					<country key="IT">Italia</country>
+				</placeName>
+            </death>	
+		    <note source="TEI-ListBibl.xml#Seminara2017" resp="#GS" ana="447">
+                  <bibl>
+                      	  <citedRange unit="page" from="268" to="268">268</citedRange>
+                  </bibl>
+                  <p> Filippo Santocanale (Palermo, 1798-1884), avvocato. <persName ref="#VB">Bellini</persName> strinse amicizia con lui nel 1832 durante il soggiorno a <placeName ref="TEI-ListPlace.xml/#PA">Palermo</placeName>; in quell’occasione il musicista ebbe modo di frequentare anche la cerchia degli amici di Santocanale (i cosiddetti “conciarioti”), che avrebbe sempre ricordato nelle sue lettere.
+                 </p>
+			</note>
+        </person>
+
+		<person xml:id="AT"> 
+          	<persName role="first violoncellist">
+              <forename>Alessandro</forename>
+              <surname>Tortelli</surname>
+            </persName>
+            <sex>M </sex>
+            <birth><date type="unknown" />
+            	<placeName type="unknown" />
+            </birth>
+            <death><date type="unknown" />
+            	<placeName type="unknown" />
+            </death>	
+		    <note source="TEI-ListBibl.xml#Seminara2017" resp="#GS" ana="477">
+                  <bibl>
+                      	  <citedRange unit="page" from="290" to="290">290</citedRange>
+                  </bibl>
+                  <p> Si trattava di Alessandro Tortelli, primo violoncello nell’orchestra del Teatro Comunale di <placeName ref="TEI-ListPlace.xml/#CT">Catania<placeName>.
+                 </p>
+			</note>
+        </person>
+
+		<person xml:id="RM"> 
+          	<persName>
+              <forename>Rosaria</forename>
+              <surname>Maugeri</surname>
+			  <addName type="alias">Sara</addName>
+            </persName>
+            <sex>F </sex>
+            <birth><date type="unknown" />
+            	<placeName type="unknown" />
+            </birth>
+            <death><date type="unknown" />
+            	<placeName type="unknown" />
+            </death>
+        </person>
+
          <listRelation>
               		<relation name="spouse" mutual="#VF #RM"/>
               		<relation name="mother" active="#AF" passive="#VB"/>
               		<relation name="sibling" mutual="#AF #VF"/>
               		<relation name="spouse" mutual="#AF #RB"/>
- 					</listRelation>
-        </listPerson>
+					<relation name="father" active="#IGM" passive="#AGP"/>
+					<relation name="friend" mutual="#IGM #VB"/>
+					<relation name="friend" mutual="#FS #VB"/>
+					<relation name="spouse" mutual="#VF #RM">
+					<relation name="aunt" active="#RM" passive="#VB"/>
+ 		</listRelation>
+    </listPerson>
           
 
                   
