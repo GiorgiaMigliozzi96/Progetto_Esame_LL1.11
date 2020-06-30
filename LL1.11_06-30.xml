@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?-->
+<!--?xml-model href="http://www.tei-c.orgtei_all.dtd" schematypens="http://relaxng.org/ns/structure/1.0"?-->
 
-<!DOCTYPE TEI>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -207,7 +208,7 @@
 			<!--hotspot: due piccoli buchi nella zona centrale in alto lungo una delle pieghe-->	
 			<zone ulx="948" uly="462" lrx="1045" lry="582" rendition="HotSpot" xml:id="LL1.11_hotspot_1rr_01"/>
 			<!--hotspot: uno strappo sul bordo sinistro nella parte centrale (in altezza)-->	
-			<zone ulx="47" uly="1457" lrx="170" lry="1642" rendition="HotSpot" xml:id="LL1.11_hotspot_1fr_02"/>
+			<zone ulx="47" uly="1457" lrx="170" lry="1642" rendition="HotSpot" xml:id="LL1.11_hotspot_1rr_02"/>
 		</surface>
 
 		<surface n="3" xml:id="LL1.11_folio_1rv">  	<!-- RETRO VERSO -->
@@ -253,8 +254,7 @@
 			<!--hotspot: un buco piccolo nel quarto inferiore della lettera a destra verso il margine, al terminie della LL1.11_line_1rv_15-->
 			<zone ulx="1539" uly="2198" lrx="1596" lry="2234" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_10"/>
 			<!--hotspot: un buco nella parte più in basso a destra della pagina, sulla parola "Nipote" (LL1.11_line_1rv_19)-->
-			<zone ulx="1365" uly="2530" lrx="1419" lry="2590" lry="2234" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_11"/>
-			
+			<zone ulx="1365" uly="2530" lrx="1419" lry="2590" rendition="HotSpot" xml:id="LL1.11_hotspot_1rv_11"/>
 		</surface>
 
 		<surface n="4" xml:id="LL1.11_folio_1fv">		<!-- FRONTE VERSO-->
