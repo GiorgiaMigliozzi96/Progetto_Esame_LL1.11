@@ -116,7 +116,7 @@
                  <surname>Bornaccini</surname>
                </persName>
               <sex>M </sex>
-              <birth><date when="1802-5-5">5 maggio 1802</date>
+              <birth><date when="1802-05-05">5 maggio 1802</date>
                  	<placeName>
             				<settlement type="municipality">Ancona</settlement>
             	 			<settlement type="provincia" key="AN">Ancona</settlement>
@@ -710,7 +710,7 @@
 
 		<person xml:id="GNP"> 
           	<persName role="singer">
-			  <ref="http://www.treccani.it/enciclopedia/giuditta-pasta/ http://www.treccani.it/enciclopedia/giuditta-negri_%28Dizionario-Biografico%29/"/>
+			      <ref target="http://www.treccani.it/enciclopedia/giuditta-pasta/ http://www.treccani.it/enciclopedia/giuditta-negri_%28Dizionario-Biografico%29/"/>
               <forename>Giuditta</forename>
               <surname>Negri Pasta</surname>
             </persName>
@@ -774,7 +774,7 @@
                   <bibl>
                       	  <citedRange unit="page" from="290" to="290">290</citedRange>
                   </bibl>
-                  <p> Si trattava di Alessandro Tortelli, primo violoncello nell’orchestra del Teatro Comunale di <placeName ref="TEI-ListPlace.xml/#CT">Catania<placeName>.
+                  <p> Si trattava di Alessandro Tortelli, primo violoncello nell’orchestra del Teatro Comunale di <placeName ref="TEI-ListPlace.xml/#CT">Catania</placeName>.
                  </p>
 			</note>
         </person>
@@ -802,7 +802,7 @@
 					<relation name="father" active="#IGM" passive="#AGP"/>
 					<relation name="friend" mutual="#IGM #VB"/>
 					<relation name="friend" mutual="#FS #VB"/>
-					<relation name="spouse" mutual="#VF #RM">
+					<relation name="spouse" mutual="#VF #RM"/>
 					<relation name="aunt" active="#RM" passive="#VB"/>
  		</listRelation>
     </listPerson>
