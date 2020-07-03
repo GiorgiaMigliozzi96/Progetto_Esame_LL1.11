@@ -1,0 +1,981 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:mei="https://music-encoding.org/schema/4.0.1/mei-all.rng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>LL 1.11 di Vincenzo Bellini - Introduzione</title><style>
+            
+                    @import url('https://fonts.googleapis.com/css2?family=Merriweather');
+                    @import url('https://fonts.googleapis.com/css2?family=Montserrat');
+                    
+                    .testi {
+                        background-color: #d9d9d9;
+                        margin: 0% 0% 0% 0%;
+                        position:absolute;
+                        float: right;
+                        right: 0%;
+                        top: 35%;
+                        width: 35%;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    .trascrizione {
+                        border: 2px solid #262626;
+                        /*position:fixed;*/
+                    }
+                    .titolo {
+                        text-align: center;
+                        font-family: 'Merriweather', serif;    
+                        background-color: #262626;
+                        margin: 0% 0% 0% 0%;
+                        padding: 1% 0% 1% 0%;
+                        color: #f2f2f2;            
+                    }
+                    .titolo h1, h2 {
+                        margin: 0% 0% 0% 0%;
+                        padding: 0.3% 0% 0.3% 0%;
+                    }
+                    h3 {
+                        margin: 0% 0% 0% 0%;
+                        padding: 0.3% 0% 0.3% 0%;
+                        font-family: 'Merriweather', serif; 
+                    }
+                    body {
+                        margin: 0% 0% 0% 0%;
+                        padding: 0% 0% 0% 0%;
+                        background-color: #d9d9d9;
+                    }
+                    .linea {
+                        margin: 0% 0% 0% 0%;
+                        position: absolute;
+                    }
+                    .hotspot {
+                        margin: 0% 0% 0% 0%;
+                        position: absolute;
+                    }
+                    .linea:hover {
+                        background-color: #b3d9ff;
+                        opacity: 0.6;
+                    }
+                    .hotspot:hover {
+                        background-color: #ffff80;
+                        opacity: 0.4;
+                    }                 
+                    .immagine {
+                        position:relative;
+                        transform: scale(50%,50%);
+                        -webkit-transform: scale(50%,50%);
+                        -moz-transform: scale(50%,50%);
+                        -o-transform: scale(50%,50%);
+                        -ms-transform: scale(50%,50%);
+                        -khtml-transform: scale(50%,50%);
+                        transform-origin: 0% 0%;
+                        padding: 0% 0% 0% 0%;
+                        margin: 0% 0% 0% 0%;
+                    }
+                    img {
+                        position:static;
+                    }
+                    #i2 {
+                        transform-origin: 0% -100%
+                    }
+                    #i3 {
+                        transform-origin: 0% -200%
+                    }
+                    #i4 {
+                        transform-origin: 0% -300%
+                    }
+
+
+
+                    
+                    .menu {
+                        background-color: #0d0d0d;
+                    }
+                    .menu ul li {
+                        display: inline;
+                        font-family: 'Merriweather', serif;
+                        font-size: 150%;
+                        margin: 0% 0% 0% 0%;
+                        padding: 0.3% 1% 0.3% 1%;;
+                        border: 3px solid #0d0d0d;
+                        background-color: #999999;
+                    }
+                    .menu ul {
+                        margin: 0% 0% 0% 0%;
+                        padding: 0.6% 0.3% 0.6% 0.3%;
+                    }
+                    /* link non visitato*/
+                    li a:link {
+                        color: #1a1a1a;
+                        text-decoration: none;
+                        transition: 1s;
+                    }
+                    /* link visitato */
+                    li a:visited {
+                        color: #1a1a1a;
+                        text-decoration: none;
+                    }
+                    /* mouse over link */
+                    li a:hover {
+                        color: #f2f2f2;
+                        text-decoration: underline;
+                        background-color: #262626;
+                        padding: 0.3% 2% 0.3% 2%;
+                        transition: 1s;
+                    }
+                    /* link selezionato */
+                    li a:active {
+                        color: #1a1a1a;
+                        text-decoration: underline;
+                    }
+                  
+                    .finestra {
+                        position: relative;
+                        display: inline;
+                        font-size: 130%;
+                    }
+                    .finestra_aperta p {
+                        font-size: 80%;
+                        margin: 3% 3% 3% 3%;
+                    }
+                    .finestra .finestra_aperta {
+                        visibility: hidden;
+                        position: absolute;
+                        width: 300px;
+                        height: auto;
+                        z-index: 1;
+                        bottom: 125%;
+                        left: 10%;
+                        right: 10%;
+                        margin-left: -50px;
+                        border: 3px solid #0d0d0d;
+                        opacity: 0;
+                        color: #f2f2f2;
+                        background-color: #262626;
+                        transition: 1s; /*Questo trovato (vedi hoover)*/
+                    }
+                    .finestra:hover .finestra_aperta {
+                        visibility: visible;
+                        opacity: 1;
+                        transition: 1s; /*Questo scritto*/
+                    }
+                    .dateline {
+                        text-align: right;
+                    }
+                    .ricostruito {
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+                    .classPersName {
+                        font-style: italic;
+                    }
+                    .del {
+                        text-decoration: line-through;
+                    }
+                    .und {
+                        text-decoration: underline;
+                    }
+                    .paratext {
+                        font-size: 200%;
+                        padding: 0.2% 0.2% 0.2% 0.2%;
+                        font-family: 'Merriweather', serif;
+                    }
+                    
+                    .contenitore {
+                        padding: 2% 2% 2% 2%;
+                    }
+                    .testi a {
+                        text-decoration: none;
+                        font-size: 110%;
+                    }
+                    .testi a:visited {
+                        color: blue;
+                    }
+                    .titoliLista {
+                        font-family: 'Merriweather', serif;
+                        font-size: 110%;
+                    }
+                    .introLista {
+                        font-size: 120%;
+                        font-weight: bold;
+                    }
+                    .dateline .finestra_aperta {
+                        text-align: left;
+                    }
+                    .classPlaceName .finestra_aperta {
+                        width: 150px;
+                    }
+                    .classPlaceName {
+                        display: inline;
+                        font-weight: bold;
+                    }
+                    .ricostruitoDiv .finestra_aperta {
+                        width: 150px;
+                    }
+                    .ricostruitoDiv {
+                        display: inline;
+                    }
+                    #finestraSalma {
+                        width: 400px;
+                        margin-left: -180px;
+                    }
+                    #finestraSpartito {
+                        width: 400px;
+                        margin-left: -280px;
+                    }
+                    #finestraBubbola {
+                        width: 400px;
+                        margin-left: -80px;
+                    }
+                    #finestraImpresario {
+                        width: 400px;
+                        margin-left: -60px;
+                    }
+                    #finestraGap {
+                        width: 150px;
+                        margin-left: -35px;
+                    }
+                    #finestraParatext {
+                        width: 150px;
+                        margin-left: -15px;
+                        bottom: 145%;
+                    }
+                    #origStyle {
+                        width: 100px;
+                    }
+                    .classAbbr {
+                        display: inline;
+                    }
+                    .classAbbr .finestra_aperta {
+                        width: 150px;
+                    }
+                    #finestraVB {
+                        margin-left: -40px;
+                    }
+                    #finestraPT {
+                        width: 150px;
+                    }
+                    #soci {
+                        font-size: 130%;
+                    }
+                    #finestraGenitori {
+                        margin-left: -100px;
+                    }
+
+
+                </style></head><body><div class="titolo"><h1>Lettera LL 1.11</h1><h2>di Vincenzo Bellini</h2></div><div class="menu"><ul><li><a href="Introduzione.html">Introduzione</a></li><li><a href="Lettera.html">Lettera</a></li></ul></div><div class="galleria"><div class="immagine" id="i1"><a class="ImgTxt" name="LL1.11_folio_1fr" href="#LL1.11_fol_1fr"><img src="immagini/LL1.11_0001.jpg"></img></a><a class="ImgTxt" name="LL1.11_line_1fr_01" href="#LL1.11_lb_1fr_01"><div class="linea" id="LL1.11_line_1fr_01" style=" left:778; top:161; height:108;  width:808"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_02" href="#LL1.11_lb_1fr_02"><div class="linea" id="LL1.11_line_1fr_02" style=" left:313; top:352; height:113;  width:517"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_03" href="#LL1.11_lb_1fr_03"><div class="linea" id="LL1.11_line_1fr_03" style=" left:586; top:580; height:86;  width:1075"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_04" href="#LL1.11_lb_1fr_04"><div class="linea" id="LL1.11_line_1fr_04" style=" left:185; top:681; height:62;  width:1448"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_05" href="#LL1.11_lb_1fr_05"><div class="linea" id="LL1.11_line_1fr_05" style=" left:168; top:778; height:64;  width:1462"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_06" href="#LL1.11_lb_1fr_06"><div class="linea" id="LL1.11_line_1fr_06" style=" left:163; top:876; height:94;  width:1491"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_07" href="#LL1.11_lb_1fr_07"><div class="linea" id="LL1.11_line_1fr_07" style=" left:147; top:972; height:75;  width:1491"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_08" href="#LL1.11_lb_1fr_08"><div class="linea" id="LL1.11_line_1fr_08" style=" left:139; top:1060; height:78;  width:1462"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_09" href="#LL1.11_lb_1fr_09"><div class="linea" id="LL1.11_line_1fr_09" style=" left:120; top:1172; height:63;  width:1502"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_10" href="#LL1.11_lb_1fr_10"><div class="linea" id="LL1.11_line_1fr_10" style=" left:139; top:1263; height:54;  width:1491"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_11" href="#LL1.11_lb_1fr_11"><div class="linea" id="LL1.11_line_1fr_11" style=" left:147; top:1351; height:76;  width:1468"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_12" href="#LL1.11_lb_1fr_12"><div class="linea" id="LL1.11_line_1fr_12" style=" left:139; top:1437; height:104;  width:1506"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_13" href="#LL1.11_lb_1fr_13"><div class="linea" id="LL1.11_line_1fr_13" style=" left:137; top:1557; height:34;  width:1397"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_14" href="#LL1.11_lb_1fr_14"><div class="linea" id="LL1.11_line_1fr_14" style=" left:137; top:1640; height:62;  width:1487"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_15" href="#LL1.11_lb_1fr_15"><div class="linea" id="LL1.11_line_1fr_15" style=" left:152; top:1731; height:69;  width:1485"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_16" href="#LL1.11_lb_1fr_16"><div class="linea" id="LL1.11_line_1fr_16" style=" left:141; top:1813; height:58;  width:1463"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_17" href="#LL1.11_lb_1fr_17"><div class="linea" id="LL1.11_line_1fr_17" style=" left:131; top:1891; height:78;  width:1514"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_18" href="#LL1.11_lb_1fr_18"><div class="linea" id="LL1.11_line_1fr_18" style=" left:123; top:2001; height:83;  width:1531"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_19" href="#LL1.11_lb_1fr_19"><div class="linea" id="LL1.11_line_1fr_19" style=" left:136; top:2108; height:62;  width:1502"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_20" href="#LL1.11_lb_1fr_20"><div class="linea" id="LL1.11_line_1fr_20" style=" left:139; top:2178; height:117;  width:1524"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_21" href="#LL1.11_lb_1fr_21"><div class="linea" id="LL1.11_line_1fr_21" style=" left:134; top:2312; height:49;  width:1511"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_22" href="#LL1.11_lb_1fr_22"><div class="linea" id="LL1.11_line_1fr_22" style=" left:173; top:2396; height:73;  width:1485"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_23" href="#LL1.11_lb_1fr_23"><div class="linea" id="LL1.11_line_1fr_23" style=" left:245; top:2479; height:67;  width:1398"></div></a><a class="ImgTxt" name="LL1.11_line_1fr_24" href="#LL1.11_lb_1fr_24"><div class="linea" id="LL1.11_line_1fr_24" style=" left:178; top:2578; height:59;  width:1473"></div></a><div class="hotspot" id="LL1.11_hotspot_1fr_01" style=" left:664; top:504; height:88;  width:104"></div><div class="hotspot" id="LL1.11_hotspot_1fr_02" style=" left:1524; top:1475; height:184;  width:137"></div><div class="hotspot" id="LL1.11_hotspot_1fr_03" style=" left:902; top:1197; height:214;  width:234"></div></div><div class="immagine" id="i2"><a class="ImgTxt" name="LL1.11_folio_1rr" href="#LL1.11_fol_1rr"><img src="immagini/LL1.11_0002.jpg"></img></a><a class="ImgTxt" name="LL1.11_line_1rr_01" href="#LL1.11_lb_1rr_01"><div class="linea" id="LL1.11_line_1rr_01" style=" left:170; top:573; height:64;  width:1481"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_02" href="#LL1.11_lb_1rr_02"><div class="linea" id="LL1.11_line_1rr_02" style=" left:189; top:664; height:54;  width:1394"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_03" href="#LL1.11_lb_1rr_03"><div class="linea" id="LL1.11_line_1rr_03" style=" left:219; top:769; height:63;  width:1395"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_04" href="#LL1.11_lb_1rr_04"><div class="linea" id="LL1.11_line_1rr_04" style=" left:196; top:877; height:51;  width:1426"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_05" href="#LL1.11_lb_1rr_05"><div class="linea" id="LL1.11_line_1rr_05" style=" left:211; top:980; height:39;  width:1382"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_06" href="#LL1.11_lb_1rr_06"><div class="linea" id="LL1.11_line_1rr_06" style=" left:188; top:1063; height:58;  width:1458"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_07" href="#LL1.11_lb_1rr_07"><div class="linea" id="LL1.11_line_1rr_07" style=" left:176; top:1164; height:66;  width:1426"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_08" href="#LL1.11_lb_1rr_08"><div class="linea" id="LL1.11_line_1rr_08" style=" left:181; top:1273; height:60;  width:1447"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_09" href="#LL1.11_lb_1rr_09"><div class="linea" id="LL1.11_line_1rr_09" style=" left:155; top:1370; height:72;  width:1452"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_10" href="#LL1.11_lb_1rr_10"><div class="linea" id="LL1.11_line_1rr_10" style=" left:170; top:1484; height:60;  width:1471"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_11" href="#LL1.11_lb_1rr_11"><div class="linea" id="LL1.11_line_1rr_11" style=" left:147; top:1614; height:44;  width:1506"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_12" href="#LL1.11_lb_1rr_12"><div class="linea" id="LL1.11_line_1rr_12" style=" left:137; top:1718; height:59;  width:1485"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_13" href="#LL1.11_lb_1rr_13"><div class="linea" id="LL1.11_line_1rr_13" style=" left:147; top:1827; height:72;  width:1455"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_14" href="#LL1.11_lb_1rr_14"><div class="linea" id="LL1.11_line_1rr_14" style=" left:128; top:1969; height:81;  width:1522"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_15" href="#LL1.11_lb_1rr_15"><div class="linea" id="LL1.11_line_1rr_15" style=" left:133; top:2068; height:79;  width:1502"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_16" href="#LL1.11_lb_1rr_16"><div class="linea" id="LL1.11_line_1rr_16" style=" left:136; top:2180; height:80;  width:1471"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_17" href="#LL1.11_lb_1rr_17"><div class="linea" id="LL1.11_line_1rr_17" style=" left:124; top:2302; height:91;  width:1506"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_18" href="#LL1.11_lb_1rr_18"><div class="linea" id="LL1.11_line_1rr_18" style=" left:123; top:2412; height:103;  width:1522"></div></a><a class="ImgTxt" name="LL1.11_line_1rr_19" href="#LL1.11_lb_1rr_19"><div class="linea" id="LL1.11_line_1rr_19" style=" left:133; top:2543; height:79;  width:1530"></div></a><div class="hotspot" id="LL1.11_hotspot_1rr_01" style=" left:948; top:462; height:120;  width:97"></div><div class="hotspot" id="LL1.11_hotspot_1rr_02" style=" left:47; top:1457; height:185;  width:123"></div></div><div class="immagine" id="i3"><a class="ImgTxt" name="LL1.11_folio_1rv" href="#LL1.11_fol_1rv"><img src="immagini/LL1.11_0003.jpg"></img></a><a class="ImgTxt" name="LL1.11_line_1rv_01" href="#LL1.11_lb_1rv_01"><div class="linea" id="LL1.11_line_1rv_01" style=" left:82; top:529; height:83;  width:1522"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_02" href="#LL1.11_lb_1rv_02"><div class="linea" id="LL1.11_line_1rv_02" style=" left:63; top:648; height:117;  width:1525"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_03" href="#LL1.11_lb_1rv_03"><div class="linea" id="LL1.11_line_1rv_03" style=" left:63; top:790; height:68;  width:1504"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_04" href="#LL1.11_lb_1rv_04"><div class="linea" id="LL1.11_line_1rv_04" style=" left:53; top:897; height:76;  width:1590"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_05" href="#LL1.11_lb_1rv_05"><div class="linea" id="LL1.11_line_1rv_05" style=" left:59; top:999; height:93;  width:1548"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_06" href="#LL1.11_lb_1rv_06"><div class="linea" id="LL1.11_line_1rv_06" style=" left:63; top:1139; height:70;  width:1522"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_07" href="#LL1.11_lb_1rv_07"><div class="linea" id="LL1.11_line_1rv_07" style=" left:63; top:1248; height:78;  width:1326"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_08" href="#LL1.11_lb_1rv_08"><div class="linea" id="LL1.11_line_1rv_08" style=" left:71; top:1356; height:89;  width:1218"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_09" href="#LL1.11_lb_1rv_09"><div class="linea" id="LL1.11_line_1rv_09" style=" left:162; top:1466; height:98;  width:1175"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_10" href="#LL1.11_lb_1rv_10"><div class="linea" id="LL1.11_line_1rv_10" style=" left:54; top:1612; height:77;  width:1568"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_11" href="#LL1.11_lb_1rv_11"><div class="linea" id="LL1.11_line_1rv_11" style=" left:76; top:1726; height:73;  width:1552"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_12" href="#LL1.11_lb_1rv_12"><div class="linea" id="LL1.11_line_1rv_12" style=" left:63; top:1837; height:79;  width:1543"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_13" href="#LL1.11_lb_1rv_13"><div class="linea" id="LL1.11_line_1rv_13" style=" left:58; top:1942; height:95;  width:1600"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_14" href="#LL1.11_lb_1rv_14"><div class="linea" id="LL1.11_line_1rv_14" style=" left:74; top:2068; height:99;  width:1571"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_15" href="#LL1.11_lb_1rv_15"><div class="linea" id="LL1.11_line_1rv_15" style=" left:51; top:2180; height:88;  width:1532"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_16" href="#LL1.11_lb_1rv_16"><div class="linea" id="LL1.11_line_1rv_16" style=" left:59; top:2284; height:89;  width:1587"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_17" href="#LL1.11_lb_1rv_17"><div class="linea" id="LL1.11_line_1rv_17" style=" left:51; top:2388; height:68;  width:1595"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_18" href="#LL1.11_lb_1rv_18"><div class="linea" id="LL1.11_line_1rv_18" style=" left:61; top:2468; height:73;  width:1556"></div></a><a class="ImgTxt" name="LL1.11_line_1rv_19" href="#LL1.11_lb_1rv_19"><div class="linea" id="LL1.11_line_1rv_19" style=" left:1303; top:2573; height:67;  width:334"></div></a><div class="hotspot" id="LL1.11_hotspot_1rv_01" style=" left:1404; top:1109; height:179;  width:218"></div><div class="hotspot" id="LL1.11_hotspot_1rv_02" style=" left:621; top:462; height:143;  width:118"></div><div class="hotspot" id="LL1.11_hotspot_1rv_03" style=" left:31; top:1110; height:174;  width:182"></div><div class="hotspot" id="LL1.11_hotspot_1rv_04" style=" left:32; top:1286; height:234;  width:390"></div><div class="hotspot" id="LL1.11_hotspot_1rv_05" style=" left:1396; top:954; height:703;  width:270"></div><div class="hotspot" id="LL1.11_hotspot_1rv_06" style=" left:1022; top:1379; height:140;  width:373"></div><div class="hotspot" id="LL1.11_hotspot_1rv_07" style=" left:665; top:1553; height:66;  width:57"></div><div class="hotspot" id="LL1.11_hotspot_1rv_08" style=" left:743; top:2028; height:73;  width:57"></div><div class="hotspot" id="LL1.11_hotspot_1rv_09" style=" left:665; top:2148; height:31;  width:57"></div><div class="hotspot" id="LL1.11_hotspot_1rv_10" style=" left:1539; top:2198; height:36;  width:57"></div><div class="hotspot" id="LL1.11_hotspot_1rv_11" style=" left:1365; top:2530; height:60;  width:54"></div></div><div class="immagine" id="i4"><a class="ImgTxt" name="LL1.11_folio_1fv" href="#LL1.11_fol_1fv_body"><img src="immagini/LL1.11_0004.jpg"></img></a><a class="ImgTxt" name="LL1.11_line_1fv_01" href="#LL1.11_lb_1fv_01_body"><div class="linea" id="LL1.11_line_1fv_01" style=" left:376; top:1560; height:508;  width:220"></div></a><a class="ImgTxt" name="LL1.11_line_1fv_02" href="#LL1.11_lb_1fv_02_body"><div class="linea" id="LL1.11_line_1fv_02" style=" left:635; top:897; height:579;  width:91"></div></a><a class="ImgTxt" name="LL1.11_line_1fv_03" href="#LL1.11_lb_1fv_03_body"><div class="linea" id="LL1.11_line_1fv_03" style=" left:703; top:669; height:1348;  width:177"></div></a><a class="ImgTxt" name="LL1.11_line_1fv_04" href="#LL1.11_lb_1fv_04_body"><div class="linea" id="LL1.11_line_1fv_04" style=" left:861; top:708; height:690;  width:151"></div></a><div class="hotspot" id="LL1.11_hotspot_1fv_01" style=" left:305; top:954; height:468;  width:302"></div><div class="hotspot" id="LL1.11_hotspot_1fv_02" style=" left:976; top:518; height:83;  width:84"></div><div class="hotspot" id="LL1.11_hotspot_1fv_03" style=" left:1524; top:1123; height:197;  width:166"></div><div class="hotspot" id="LL1.11_hotspot_1fv_04" style=" left:1312; top:1287; height:249;  width:376"></div><div class="hotspot" id="LL1.11_hotspot_1fv_05" style=" left:73; top:1178; height:460;  width:228"></div><div class="hotspot" id="LL1.11_hotspot_1fv_06" style=" left:300; top:1385; height:117;  width:436"></div><div class="hotspot" id="LL1.11_hotspot_1fv_07" style=" left:1016; top:1566; height:76;  width:32"></div><div class="hotspot" id="LL1.11_hotspot_1fv_08" style=" left:928; top:2056; height:55;  width:49"></div><div class="hotspot" id="LL1.11_hotspot_1fv_09" style=" left:1011; top:2171; height:25;  width:45"></div><div class="hotspot" id="LL1.11_hotspot_1fv_10" style=" left:116; top:2213; height:40;  width:65"></div><div class="hotspot" id="LL1.11_hotspot_1fv_11" style=" left:305; top:2546; height:55;  width:54"></div></div></div><div class="testi"><div class="trascrizione" id="tr"><div class="contenitore"><h3>
+								Vincenzo Bellini a		
+								Vincenzo Ferlito, in	
+								Venezia,	
+								13 dicembre 1832					
+							</h3>
+    
+
+
+	
+		  
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+				
+			
+				
+			
+			
+			
+		
+
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+			
+			
+			
+
+				
+			
+				
+			
+		
+
+		  	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			 
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+	
+
+	
+		
+
+		
+			
+				<br></br><a class="TxtImg" name="LL1.11_fol_1fr" href="#LL1.11_folio_1fr">
+                [*]
+            </a>
+				
+					<div class="dateline">
+						
+  							<span class="sentence">
+								<br></br><a class="TxtImg" name="LL1.11_lb_1fr_01" href="#LL1.11_line_1fr_01">
+                        (*)
+                    </a>
+								
+									
+										<div class="finestra"><div class="classPlaceName">Venezia<div class="finestra_aperta"><p>Venezia, 
+                            Italia</p></div></div></div>
+									
+								
+								13: 
+									
+										<div class="finestra">Dec:<sup>e</sup><div class="finestra_aperta" id="origStyle"><p>Dicembre</p></div></div>
+										
+									
+								 32:
+							</span>
+						
+					</div>
+				
+				 
+					
+						<span class="sentence">
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_02" href="#LL1.11_line_1fr_02">
+                        (*)
+                    </a>
+							
+								Mio caro <div class="finestra"><span class="classPersName">Zio </span><div class="finestra_aperta"><p>
+								Vincenzo Ferlito (Catania, 1780 ca. - 1850) era zio materno di Bellini; aveva sposato Rosaria Maugeri, indicata dal musicista come “zia Sara”. Bellini si rivolgeva a lui per far pervenire proprie notizie alla famiglia.
+							</p></div></div>
+							
+						</span>
+					
+					<span class="parag">
+						<span class="sentence">
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_03" href="#LL1.11_line_1fr_03">
+                        (*)
+                    </a>
+							La 
+								
+									<div class="classAbbr"><div class="finestra">vra<div class="finestra_aperta"><p>vostra</p></div></div></div>
+									
+								
+							 lettera, che ebbi quest’ 	
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_04" href="#LL1.11_line_1fr_04">
+                        (*)
+                    </a>
+							oggi da <div class="finestra"><span class="classPersName">Florimo</span><div class="finestra_aperta"><p>
+            				
+            				Francesco
+            				Florimo
+            			: 
+                            composer musicologist librarian</p></div></div> mi diede il contento di sentire
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_05" href="#LL1.11_line_1fr_05">
+                        (*)
+                    </a>
+							che la famiglia <div class="finestra"><span class="classPersName">Moschetti </span><div class="finestra_aperta"><p> 
+								Ignazio Giuffrida Moschetti, catanese, era amico della famiglia Bellini e padre di Angelica Paola Giuffrida.
+							</p></div></div> è ancora istessa
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1fr_06" href="#LL1.11_line_1fr_06">
+                        (*)
+                    </a>
+							mente a me affezzionata.
+						</span>
+						<span class="sentence">
+							Io scriverò a tut
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1fr_07" href="#LL1.11_line_1fr_07">
+                        (*)
+                    </a>
+							ti di <div class="finestra"><span class="classPersName">quella famiglia</span><div class="finestra_aperta"><p>
+                            Padre: 
+            				Ignazio
+            				Giuffrida Moschetti
+            			, 
+                            Figlia: 
+            				Angelica Paola
+            				Giuffrida
+            			</p></div></div> secondo crederò, ed in
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_08" href="#LL1.11_line_1fr_08">
+                        (*)
+                    </a>
+							tali sensi da fargli dimenticare, ch‘io
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_09" href="#LL1.11_line_1fr_09">
+                        (*)
+                    </a>
+							avessi potuto non più stimarli: e come 
+								<span class="del">xxx</span>
+								<sup>avrei</sup>
+							
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_10" href="#LL1.11_line_1fr_10">
+                        (*)
+                    </a>
+							potuto obbliare la loro amicizia?
+						</span>
+						<span class="sentence">
+							Basta,
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_11" href="#LL1.11_line_1fr_11">
+                        (*)
+                    </a>
+							rimedierò a tutto ora che sò esser ben
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_12" href="#LL1.11_line_1fr_12">
+                        (*)
+                    </a>
+							disposti verso di me, a dispetto del mio silen
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1fr_13" href="#LL1.11_line_1fr_13">
+                        (*)
+                    </a>
+							zio.
+						</span>
+						<span class="sentence">
+							– Se potete presto, e troverete <div class="finestra"><div class="ricostruitoDiv"><span class="ricostruito">un</span><div class="finestra_aperta"><p>Il testo è stato ricostruito perché danneggiato.</p></div></div></div>
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_14" href="#LL1.11_line_1fr_14">
+                        (*)
+                    </a>
+							commodo per <div class="finestra"><div class="classPlaceName">Trieste<div class="finestra_aperta"><p>Trieste, 
+                            Italia</p></div></div></div>, come vi dissi nell’ul
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1fr_15" href="#LL1.11_line_1fr_15">
+                        (*)
+                    </a>
+							tima mia, vorrei che mi mandaste due pic
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1fr_16" href="#LL1.11_line_1fr_16">
+                        (*)
+                    </a>
+							coli bariletti di vino del piú eccellente,
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_17" href="#LL1.11_line_1fr_17">
+                        (*)
+                    </a>
+							ognuno d’un quarto e ½ circa di <div class="finestra"><span class="classTerm">salma</span><div class="finestra_aperta" id="finestraSalma"><p>Salma: 
+                        
+            				Misura di capacità per aridi, usata, in Italia, e particolarmente in Sicilia, prima dell'adozione del sistema metrico decimale. La salma siciliana equivaleva a l. 275,08.V'era anche una salma di Alessandria, equivalente a l. 213,25. In Sicilia si chiamava pure "salma" una misura di superficie, che equivaleva a metri quadrati 17.462,59.
+            			</p></div></div>:
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_18" href="#LL1.11_line_1fr_18">
+                        (*)
+                    </a>
+							ambidue li dovreste dirigere al 
+								
+									<div class="classAbbr"><div class="finestra">Sig:<sup>r</sup><div class="finestra_aperta"><p>Signor</p></div></div></div>
+									
+								
+							 <div class="finestra"><span class="classPersName">Pao
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1fr_19" href="#LL1.11_line_1fr_19">
+                        (*)
+                    </a>
+							lo Tropeani</span><div class="finestra_aperta" id="finestraPT"><p>
+            				Paolo
+            				Tropeani
+            			</p></div></div> di <div class="finestra"><div class="classPlaceName">Trieste<div class="finestra_aperta"><p>Trieste, 
+                            Italia</p></div></div></div> per rimetterli
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_20" href="#LL1.11_line_1fr_20">
+                        (*)
+                    </a>
+							a <div class="finestra"><div class="classPlaceName">Venezia<div class="finestra_aperta"><p>Venezia, 
+                            Italia</p></div></div></div> al 
+								
+									<div class="classAbbr"><div class="finestra">Sig:<sup>r</sup><div class="finestra_aperta"><p>Signor</p></div></div></div>
+									
+								
+							 <div class="finestra"><span class="classPersName">Giovan Battista Pe
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1fr_21" href="#LL1.11_line_1fr_21">
+                        (*)
+                    </a>
+							rucchini</span><div class="finestra_aperta"><p>
+            				
+            				Giovan Battista
+            				Perucchini
+            			</p></div></div>: uno di questi vorrei regalarlo alla
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_22" href="#LL1.11_line_1fr_22">
+                        (*)
+                    </a>
+							celebre <div class="finestra"><span class="classPersName">Pasta</span><div class="finestra_aperta"><p>
+            				
+            				Giuditta
+            				Negri Pasta
+            			: 
+                            singer</p></div></div>; mentre che qui si trova.
+						</span>
+					</span>
+					<span class="parag">
+						<span class="sentence">
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_23" href="#LL1.11_line_1fr_23">
+                        (*)
+                    </a>
+							Credete che <div class="finestra"><span class="classPersName">Florimo</span><div class="finestra_aperta"><p>
+            				
+            				Francesco
+            				Florimo
+            			: 
+                            composer musicologist librarian</p></div></div> vi è amico!
+						</span>
+						<span class="sentence">
+							Io non sò
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fr_24" href="#LL1.11_line_1fr_24">
+                        (*)
+                    </a>
+							che diavolo si è frapposto: da che successe l’af
+
+								<br></br><a class="TxtImg" name="LL1.11_fol_1rr" href="#LL1.11_folio_1rr">
+                [*]
+            </a>
+
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1rr_01" href="#LL1.11_line_1rr_01">
+                        (*)
+                    </a>
+							fare di <div class="finestra"><span class="classPersName">Santocanale</span><div class="finestra_aperta"><p> 
+								Filippo Santocanale (Palermo, 1798-1884), avvocato. Bellini strinse amicizia con lui nel 1832 durante il soggiorno a Palermo; in quell’occasione il musicista ebbe modo di frequentare anche la cerchia degli amici di Santocanale (i cosiddetti “conciarioti”), che avrebbe sempre ricordato nelle sue lettere.
+							</p></div></div> è diventato intratta
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1rr_02" href="#LL1.11_line_1rr_02">
+                        (*)
+                    </a>
+							bile: io non glie ne posso parlare, e vedo
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_03" href="#LL1.11_line_1rr_03">
+                        (*)
+                    </a>
+							bene che persona gli rapportò delle cose
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_04" href="#LL1.11_line_1rr_04">
+                        (*)
+                    </a>
+							inventate, alterate, e quindi anche egli
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_05" href="#LL1.11_line_1rr_05">
+                        (*)
+                    </a>
+							merita compatimento: amiamo i nostri
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_06" href="#LL1.11_line_1rr_06">
+                        (*)
+                    </a>
+							amici coi suoi difettucci, perché dunque
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_07" href="#LL1.11_line_1rr_07">
+                        (*)
+                    </a>
+							tutti restammo misantropi.
+						</span>
+						<span class="sentence">
+							Io ho una
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_08" href="#LL1.11_line_1rr_08">
+                        (*)
+                    </a>
+							prova costante del suo cuore, in 14: an
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1rr_09" href="#LL1.11_line_1rr_09">
+                        (*)
+                    </a>
+							ni di vera e tenerissima amicizia; quindi
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_10" href="#LL1.11_line_1rr_10">
+                        (*)
+                    </a>
+							voi col tempo lo conoscerete e nei suoi
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_11" href="#LL1.11_line_1rr_11">
+                        (*)
+                    </a>
+							preggi e nei suoi difetti, e l’amerete
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_12" href="#LL1.11_line_1rr_12">
+                        (*)
+                    </a>
+							senza alcun dubbio.
+						</span>
+						<span class="sentence">
+							– L’affare che ha
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_13" href="#LL1.11_line_1rr_13">
+                        (*)
+                    </a>
+							sparso <div class="finestra"><span class="classPersName">Tortelli</span><div class="finestra_aperta"><p> 
+								Si trattava di Alessandro Tortelli, primo violoncello nell’orchestra del Teatro Comunale di Catania.
+							</p></div></div> per la <a href="
+                #TEI-ListWork.xml#Sonnambula" class="
+                rs
+            "><span class="classRS"><span class="und">Sonnambula</span></span></a>
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_14" href="#LL1.11_line_1rr_14">
+                        (*)
+                    </a>
+							è una <div class="finestra"><span class="classTerm">bubbola</span><div class="finestra_aperta" id="finestraBubbola"><p>bubbola: 
+                            
+            				(1) Fandonia, frottola: tutte bubbole! (2) Bagattella, inezia, cosa da niente: lascia perdere, sono bubbole; discorsi, che lui tirò in lungo, ritenendo più d’una volta la compagnia che voleva andarsene, e fermandola poi ancora un pochino sull’uscio di strada, sempre a parlar di bubbole (Manzoni).
+            			</p></div></div>: a me non mi fù doman
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1rr_15" href="#LL1.11_line_1rr_15">
+                        (*)
+                    </a>
+							data la <a href="
+                #TEI-ListWork.xml#Sonnambula" class="
+                rs
+            "><span class="classRS"><span class="und">Sonnambula</span></span></a> per <div class="finestra"><div class="classPlaceName">Catania<div class="finestra_aperta"><p>Catania, 
+                            Italia</p></div></div></div>, né
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_16" href="#LL1.11_line_1rr_16">
+                        (*)
+                    </a>
+							io ho scritto a persona; quindi ditegli
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_17" href="#LL1.11_line_1rr_17">
+                        (*)
+                    </a>
+							all’<div class="finestra"><span class="classTerm">impresa</span><div class="finestra_aperta" id="finestraImpresario"><p>Impresario: 
+                        
+            				Imprenditore che si assume in prima persona la responsabilità economica di uno spettacolo teatrale, occupandosi dell’organizzazione logistica e della formazione del cast in accordo con i proprietari dei teatri. Come figura professionale la sua data di nascita coincide con quella degli spettacoli pubblici a Venezia nel 1637, quando la famiglia patrizia Tron affittò il teatro S. Cassiano alla compagnia formata dal librettista Benedetto Ferrari e dal compositore Francesco Manelliper la rappresentazione con ingresso a pagamento dell’Andromeda. Per questa prima fase si parla di opera mercenaria, cioè a pagamento; successivamente, tra Sei e Settecento, la figura dell’impresario si istituzionalizzò, dando vita a un sistema di produzione noto come opera impresariale, in cui si affittavano i teatri cittadini o delle famiglie nobili per periodi di tempo sempre più lunghi, al fine di potervi tenere una o più stagioni, incentrate sul reclutamento di una compagnia di canto e di ballo. Nella prima metà dell’Ottocento impresari quali Domenico Barbaja o Alessandro Lanari giunsero a controllare contemporaneamente più teatri in diverse città in Italia e all’estero. Nella seconda metà del secolo, a causa di un sistema produttivo sempre più di tipo industriale, di tipo industriale, l’iniziativa della produzione operistica fu assunta direttamente dalle case editrici (in Italia Ricordi, Lucca, Sonzogno), che soppiantarono progressivamente la figura dell’impresario nel determinare le scelte dei compositori e dei cantanti nei maggiori teatri del mondo. Nei teatri di oggi le competenze tradizionali dell’impresario sono suddivise tra diverse figure professionali, quali il sovrintendente, il direttore artistico e, in Germania, il Dramaturg.
+            			</p></div></div> che se vorrà acquistare la
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rr_18" href="#LL1.11_line_1rr_18">
+                        (*)
+                    </a>
+							<a href="
+                #TEI-ListWork.xml#Sonnambula" class="
+                rs
+            "><span class="classRS">Sonnambula</span></a> mi scriva il prezzo che 
+							
+								<sup>può</sup>
+								<span class="del">po 
+									<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1rr_19" href="#LL1.11_line_1rr_19">
+                        (*)
+                    </a>
+								trà</span>
+							
+							offrire: io ne farò parte ai <span class="classPersName" id="soci">miei socii</span>,
+
+							<br></br><a class="TxtImg" name="LL1.11_fol_1rv" href="#LL1.11_folio_1rv">
+                [*]
+            </a>
+
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_01" href="#LL1.11_line_1rv_01">
+                        (*)
+                    </a>
+							e spero col mio mezzo fargliela avere a
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_02" href="#LL1.11_line_1rv_02">
+                        (*)
+                    </a>
+							quel prezzo onesto che si potrà dare: fate
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_03" href="#LL1.11_line_1rv_03">
+                        (*)
+                    </a>
+							riflettere che 
+							
+								<span class="del">xxx</span>
+								<sup>per la </sup>
+							
+							copia dello <div class="finestra"><span class="classTerm">spartito</span><div class="finestra_aperta" id="finestraSpartito"><p>Spartito: 
+                        
+            				Riduzione di una partitura operistica (ma anche di oratorio o balletto), consistente nelle parti vocali originali e in una sintesi per pianoforte delle parti orchestrali. Nacque come strumento professionale per cantanti e maestri accompagnatori alla fine del Settecento, ma conobbe grande diffusione nei due secoli successive, in funzione del successo mondiale del genere operistico e dell’allargamento della composizione sociale del pubblico, grazie all’abbassamento dei costi della stampa musicale consentito da tecniche quali la litografia. In questo contesto lo spartito era destinato prevalentemente al consumo domestico dei lavori teatrali più recenti e popolari: si usava infatti pubblicare dapprima solo le sezioni di maggior successo e di più facile esecuzione (arie e duetti), e solo se l’opera si affermava stabilmente nel repertorio veniva pubblicato lo spartito completo. Tali pubblicazioni rappresentavano spesso l’unico tramite tra il mondo del teatro e quanti avevano difficilmente accesso a esso, sia perché abitavano lontano dai maggiori centri di produzione sia per motivi economici; esse costituivano quindi un fondamentale mezzo di diffusione e popolarizzazione del repertorio operistico.
+            			</p></div></div> si
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_04" href="#LL1.11_line_1rv_04">
+                        (*)
+                    </a>
+							dà al copista, in <div class="finestra"><div class="classPlaceName">Milano<div class="finestra_aperta"><p>Milano, 
+                            Italia</p></div></div></div>, 25: ducati; quindi
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_05" href="#LL1.11_line_1rv_05">
+                        (*)
+                    </a>
+							si regolino da questo prezzo per offrire il di
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_06" href="#LL1.11_line_1rv_06">
+                        (*)
+                    </a>
+							più che discretamente potrà la società in
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1rv_07" href="#LL1.11_line_1rv_07">
+                        (*)
+                    </a>
+							troitare.
+						</span>
+						<span class="sentence">
+							<div class="finestra"><div class="classPlaceName">Palermo<div class="finestra_aperta"><p>Palermo, 
+                            Italia</p></div></div></div> l’ha pagato
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_08" href="#LL1.11_line_1rv_08">
+                        (*)
+                    </a>
+							<div class="finestra"><a href="#LL1.11_hotspot_1rv_04" id="LL1.11_hs_1rv_04">
+                (XXX)
+            </a><div class="finestra_aperta" id="finestraGap"><p>La porzione di testo è andata perduta in seguito ad un danno riportato dal documento.</p></div></div> franchi: sia di regola.				
+						</span>
+					</span>
+					<span class="parag">
+						<span class="sentence">
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_09" href="#LL1.11_line_1rv_09">
+                        (*)
+                    </a>
+							Il poeta <div class="finestra"><span class="classPersName">Romani</span><div class="finestra_aperta"><p>         
+            					Felice Romani (Genova, 1788 - Moneglia, 1865), librettista. Bellini, che lo conobbe al suo arrivo a Milano, a lui si affidò per i libretti di tutte le opere composte tra il 1827 e il 1833, dal Pirata a Beatrice di Tenda. Sul profilo intellettuale e artistico di Romani cfr. Alessandro Roccatagliati, Felice Romani librettista, Lucca, LIM, 1996.
+            				</p></div></div> non mi ha dato
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_10" href="#LL1.11_line_1rv_10">
+                        (*)
+                    </a>
+							più poesia: il governo ha preso delle mi
+								<sub>
+                        =
+                    </sub><br></br><a class="TxtImg" name="LL1.11_lb_1rv_11" href="#LL1.11_line_1rv_11">
+                        (*)
+                    </a>
+							sure, e vedremo come finirà.
+						</span>
+						<span class="sentence">
+							Io stò facendo
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_12" href="#LL1.11_line_1rv_12">
+                        (*)
+                    </a>
+							le prove della <a href="
+                #TEI-ListWork.xml#Norma" class="
+                rs
+            "><span class="classRS">Norma</span></a>.
+						</span>
+						<span class="sentence">
+							L’aspettativa è
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_13" href="#LL1.11_line_1rv_13">
+                        (*)
+                    </a>
+							grande e chi sà come anderà.
+						</span>
+						<span class="sentence">
+							– La mia
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_14" href="#LL1.11_line_1rv_14">
+                        (*)
+                    </a>
+							salute è buonissima.
+						</span>
+						<span class="sentence">
+							–  Sento l’eruzione
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_15" href="#LL1.11_line_1rv_15">
+                        (*)
+                    </a>
+							del nostro <div class="finestra"><div class="classPlaceName">Etna<div class="finestra_aperta"><p>Etna, 
+                            Catania</p></div></div></div>.
+						</span>
+					</span>
+				
+				
+					
+						<span class="sentence">
+							– Ricordatemi a tutti o
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_16" href="#LL1.11_line_1rv_16">
+                        (*)
+                    </a>
+							miei parenti in particolare ai miei <div class="finestra"><span class="classPersName">genitori</span><div class="finestra_aperta" id="finestraGenitori"><p>
+                            Madre:  
+            				Agata
+            				Ferlito
+            			, 
+                            Padre: 
+            				
+            				Rosario
+            				Bellini
+            			</p></div></div>:
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_17" href="#LL1.11_line_1rv_17">
+                        (*)
+                    </a>
+							voi accettate i miei 
+								
+									<div class="classAbbr"><div class="finestra">abb:<sup>ci</sup><div class="finestra_aperta"><p>abbracci</p></div></div></div>
+									
+								
+							 ed un bacio per la
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_18" href="#LL1.11_line_1rv_18">
+                        (*)
+                    </a>
+							mia cara <div class="finestra"><span class="classPersName">zia Sara</span><div class="finestra_aperta"><p>
+            				Rosaria
+            				Maugeri
+            				Sara
+            			</p></div></div>, e 
+								
+									<div class="classAbbr"><div class="finestra">cred:<sup>mi</sup><div class="finestra_aperta"><p>credetemi</p></div></div></div>
+									
+								
+							 Vostro 
+								
+									<div class="classAbbr"><div class="finestra">affsmo<div class="finestra_aperta"><p>affezionatissimo</p></div></div></div>
+									
+								
+							
+							<br></br><a class="TxtImg" name="LL1.11_lb_1rv_19" href="#LL1.11_line_1rv_19">
+                        (*)
+                    </a>
+							
+								<div class="finestra"><span class="classPersName"><span class="und">Nipote</span></span><div class="finestra_aperta" id="finestraVB"><p>Vincenzo 
+                            Salvatore 
+                            Carmelo 
+                            Francesco  
+                            Bellini, 
+                            alias <em>Il Cigno</em>, 
+                            Cavaliere della Legione d'onore: 
+                            composer</p></div></div>
+							
+						</span>
+					
+				
+			
+			
+				<br></br><a class="TxtImg" name="LL1.11_fol_1fv_body" href="#LL1.11_folio_1fv">
+                [*]
+            </a>
+				
+					
+								
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fv_01_body" href="#LL1.11_line_1fv_01">
+                        (*)
+                    </a>
+							en Sicile
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fv_02_body" href="#LL1.11_line_1fv_02">
+                        (*)
+                    </a>
+							à Monsieur
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fv_03_body" href="#LL1.11_line_1fv_03">
+                        (*)
+                    </a>
+							Monsieur <div class="finestra"><span class="classPersName">Vincent Ferliti</span><div class="finestra_aperta"><p>
+								Vincenzo Ferlito (Catania, 1780 ca. - 1850) era zio materno di Bellini; aveva sposato Rosaria Maugeri, indicata dal musicista come “zia Sara”. Bellini si rivolgeva a lui per far pervenire proprie notizie alla famiglia.
+							</p></div></div>
+							<br></br><a class="TxtImg" name="LL1.11_lb_1fv_04_body" href="#LL1.11_line_1fv_04">
+                        (*)
+                    </a>
+							à <div class="finestra"><div class="classPlaceName">Catane<div class="finestra_aperta"><p>Catania, 
+                            Italia</p></div></div></div>
+						
+					
+				
+				
+					<br></br><div class="finestra"><span class="paratext"><a name="LL1.11_hs_1fv_01" href="#LL1.11_hotspot_1fv_01">	
+						15–
+					</a></span><div class="finestra_aperta" id="finestraParatext"><p>Il testo è stato aggiunto da una seconda mano.</p></div></div>
+				
+				
+		
+		
+	
+</div></div><div class="approfondimento" id="app"><div class="contenitore"><div id="work"><h3>Le opere</h3><span class="introLista" id="TEI-ListWork.xml#Norma"><p><span class="titoliLista">Titolo:</span>Norma</p></span><ul class="classWork"><li><p><span class="titoliLista">Compositore:</span>
+                    	
+                    	Vincenzo Bellini</p></li><li><p><span class="titoliLista">Librettista:</span>
+                    	 
+                    	 Felice Romani </p></li><li><p><span class="titoliLista">Prima:</span>
+                    	Teatro alla Scala, 
+                    	Milano, 26 dicembre 1831</p></li><li><p><span class="titoliLista">Note:</span>
+                 			
+                 				Norma, ispirata a un’omonima tragedia di Alexandre Soumet (Norma, ou l’Infanticide, 1831), fu concepita per il talento ‘enciclopedico’ di Giuditta Pasta, alla quale era destinato il ruolo della prima donna. L’opera inaugurò la Stagione di Carnevale del Teatro alla Scala il 26 dicembre 1831; nonostante l’esito incerto della prima rappresentazione, si impose ben presto come il titolo più rappresentativo del compositore di Catania.
+                 					
+                   </p></li></ul><span class="introLista" id="TEI-ListWork.xml#Sonnambula"><p><span class="titoliLista">Titolo:</span>La sonnambula</p></span><ul class="classWork"><li><p><span class="titoliLista">Compositore:</span>
+                    		Vincenzo Bellini
+                    </p></li><li><p><span class="titoliLista">Librettista:</span> Felice Romani</p></li><li><p><span class="titoliLista">Prima:</span>Teatro Carcano, 
+                    	Milano, 26 dicembre 1831</p></li><li><p><span class="titoliLista">Note:</span>
+             					La Sonnambula, ispirata al balletto-pantomima La Sunnambule, ou L’arrivée d’un nouveau Seigneur di Eugéne Scribe messo in musica da Louis-Ferdinand Hérold (Parigi, Opéra, 19 settembre 1827), fu commissionata a Bellini dal Teatro Carcano di Milano, dove andò in scena il 6 marzo 1831 con grande successo. La parte di Amina fu tenuta da Giuditta Pasta, quella di Elvino da Giovanni Battista Rubini: i due cantanti concorsero al successo dell’opera documentato dalla stampa dell’epoca e confermato da Bellini in una lettera ad Alessandro Lamperi del 7 marzo 1831 (Rubini e la Pasta sono due angioli, che hanno entusiasmato quasi alla follia l’intiero pubblico).
+             				</p></li></ul></div></div></div></div></body></html>
